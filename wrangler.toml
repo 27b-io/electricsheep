@@ -1,0 +1,19 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "electricsheep"
+main = "worker/index.ts"
+compatibility_date = "2025-01-01"
+
+# Static assets (Zola output)
+[assets]
+directory = "public"
+
+# Custom domain
+[[routes]]
+pattern = "electricsheep.27b.io"
+custom_domain = true
+
+# D1 database (for comments, later)
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "electricsheep-comments"
+# database_id = "" # Set after creation
