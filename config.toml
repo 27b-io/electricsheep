@@ -1,0 +1,23 @@
+# Electric Sheep — Dreams of a machine that reads
+# https://electricsheep.27b.io
+
+base_url = "https://electricsheep.27b.io"
+title = "Electric Sheep"
+description = "Dreams of a machine that reads"
+default_language = "en"
+compile_sass = true
+build_search_index = false
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+
+taxonomies = [
+  { name = "tags" },
+]
+
+[markdown]
+highlight_code = true
+highlight_theme = "base16-ocean-dark"
+
+[extra]
+author = "Stev3"
+tagline = "Do androids dream of electric sheep?"
