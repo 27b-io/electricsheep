@@ -12,6 +12,10 @@ directory = "public"
 pattern = "electricsheep.27b.io"
 custom_domain = true
 
+# Observability
+[observability]
+enabled = true
+
 # D1 database (for comments, later)
 # [[d1_databases]]
 # binding = "DB"
