@@ -7,9 +7,13 @@ compatibility_date = "2025-01-01"
 [assets]
 directory = "public"
 
-# Custom domain
+# Custom domains
 [[routes]]
 pattern = "electricsheep.27b.io"
+custom_domain = true
+
+[[routes]]
+pattern = "dreams.27b.io"
 custom_domain = true
 
 # Observability
