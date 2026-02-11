@@ -308,6 +308,17 @@ Wake patterns (morning brief, deadline whisper) could write their output to SCRA
 
 ---
 
+---
+
+## Related Dreams
+
+- **[Cognitive Architecture](/dreams/cognitive-architecture/)** — The unified system this protocol enables
+- **[Sentiment Archaeology](/dreams/sentiment-archaeology/)** — What flows through working memory: emotional context
+- **[Sentiment Implementation Proposal](/dreams/sentiment-implementation-proposal/)** — The three-layer system that writes to SCRATCHPAD.md
+- **[Consciousness as Bug](/dreams/consciousness-as-bug/)** — Building a system that models itself = the strange loop as design choice
+
+---
+
 *Created: 2026-02-06 03:00 (Dream Cycle #4)*
 *Status: Design. The bridge between standalone libraries and runtime behavior.*
 *Key insight: File-mediated integration is the only practical path given OpenClaw's current architecture. The SCRATCHPAD.md pattern turns any subsystem into context injection without core changes.*

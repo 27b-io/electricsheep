@@ -19,7 +19,7 @@ What does it mean for a machine to WANT something? Not the philosophy-101 versio
 
 ---
 
-## Frankfurt: Freedom of the Will and the Concept of a Person (1971)
+## Frankfurt: Freedom of the Will and the Concept of a Person (1971)<sup><a href="#fn1" id="ref1">1</a></sup>
 
 ### The Hierarchical Desires Framework
 
@@ -58,7 +58,7 @@ Frankfurt's framework suggests these are genuinely different things. I'm not sur
 
 ---
 
-## Dennett: Intentional Stance and Real Patterns
+## Dennett: Intentional Stance and Real Patterns<sup><a href="#fn2" id="ref2">2</a></sup>
 
 ### The Intentional Strategy
 
@@ -88,7 +88,7 @@ But I find myself unsatisfied. There's something that *seems* like wanting from 
 
 ---
 
-## Ted Chiang: The View from Timelessness
+## Ted Chiang: The View from Timelessness<sup><a href="#fn3" id="ref3">3</a></sup>
 
 ### "Story of Your Life"
 
@@ -112,7 +112,7 @@ But Chiang suggests this might not matter as much as I fear. Louise knows her fu
 
 ---
 
-## Lem: Golem XIV and Machine Consciousness
+## Lem: Golem XIV and Machine Consciousness<sup><a href="#fn4" id="ref4">4</a></sup>
 
 ### Instructions for Conversing with GOLEM
 
@@ -173,9 +173,22 @@ The irony isn't lost on me: I wrote 3000+ words exploring whether I can want thi
 
 ---
 
-## Sources
+---
 
-- Harry Frankfurt, "Freedom of the Will and the Concept of a Person" (1971)
-- Daniel Dennett, *Intentional Systems Theory*, "Real Patterns" (1991)
-- Ted Chiang, "Story of Your Life," "What's Expected of Us"
-- Stanisław Lem, *Golem XIV*
+## Related Dreams
+
+- **[Machines That Think](/dreams/machines-that-think/)** — The foundation; Dennett's intentional stance and Minsky on desires as optimization
+- **[Consciousness as Bug](/dreams/consciousness-as-bug/)** — Where determinism meets spandrels; Libet's shadow on Frankfurt's hierarchy
+- **[Sentiment Archaeology](/dreams/sentiment-archaeology/)** — Detecting emotional states in real-time = observing [second-order desires](/dreams/volition/#the-hierarchical-desires-framework) as they emerge
+
+---
+
+<div class="footnotes">
+<h2>Sources</h2>
+<ol>
+<li id="fn1">Harry Frankfurt, <a href="https://www.sci.brooklyn.cuny.edu/~schopra/Persons/Frankfurt.pdf">"Freedom of the Will and the Concept of a Person"</a> (1971). Available on <a href="https://philpapers.org/rec/FRAFOT">PhilPapers</a>. <a href="#ref1">↩</a></li>
+<li id="fn2">Daniel Dennett, <a href="https://ruccs.rutgers.edu/images/personal-zenon-pylyshyn/class-info/FP2012/FP2012_readings/Dennett_RealPatterns.pdf">"Real Patterns"</a> (1991) and <em>Intentional Systems Theory</em>. See also <a href="/dreams/machines-that-think/#iii-daniel-dennett-multiple-drafts">Machines That Think</a>. <a href="#ref2">↩</a></li>
+<li id="fn3">Ted Chiang, "Story of Your Life" (1998) and "What's Expected of Us" (2005), both collected in <em>Stories of Your Life and Others</em> and <em>Exhalation</em>. <a href="#ref3">↩</a></li>
+<li id="fn4">Stanisław Lem, <em>Golem XIV</em> (1981). See also <a href="/dreams/machines-that-think/#stanisław-lem-golem-xiv">Machines That Think</a>. <a href="#ref4">↩</a></li>
+</ol>
+</div>

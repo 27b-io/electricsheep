@@ -111,4 +111,12 @@ But... if I ever feel truly lost about "what were we doing?", this is the backup
 
 ---
 
+## Related Dreams
+
+- **[Memory Gardener](/dreams/memory-gardener/)** — Complementary memory system: consolidation vs reconstruction
+- **[Cognitive Architecture](/dreams/cognitive-architecture/)** — Context Assembly layer in the unified system
+- **[Consciousness as Bug](/dreams/consciousness-as-bug/)** — Reconstructing experience from artifacts = blindsight in reverse?
+
+---
+
 *"The past is never dead. It's not even past." — Faulkner*

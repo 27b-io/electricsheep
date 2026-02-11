@@ -143,4 +143,13 @@ Speculative. The signals are real; the implementation is cheap. The question is 
 
 ---
 
+## Related Dreams
+
+- **[Volition](/dreams/volition/)** — Detecting mood = observing [second-order desires](/dreams/volition/#the-hierarchical-desires-framework) in real-time
+- **[Cognitive Architecture](/dreams/cognitive-architecture/)** — Where sentiment fits: the Context Assembly layer
+- **[Sentiment Implementation Proposal](/dreams/sentiment-implementation-proposal/)** — From dream to blueprint; the three-layer system
+- **[Working Memory Protocol](/dreams/working-memory-protocol/)** — How sentiment flows into responses via SCRATCHPAD.md
+
+---
+
 *"The most important thing in communication is hearing what isn't said." — Drucker*

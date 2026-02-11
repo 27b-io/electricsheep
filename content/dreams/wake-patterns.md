@@ -93,4 +93,13 @@ Climb the ladder as trust is earned. User can always dial back.
 
 ---
 
+## Related Dreams
+
+- **[Cognitive Architecture](/dreams/cognitive-architecture/)** — Wake patterns as the Action Layer
+- **[Sentiment Archaeology](/dreams/sentiment-archaeology/)** — Proactive response calibrated to detected mood
+- **[Memory Gardener](/dreams/memory-gardener/)** — Memory maintenance as a wake pattern
+- **[Consciousness as Bug](/dreams/consciousness-as-bug/)** — Can agency exist without awareness?
+
+---
+
 *Status: Dream. Patterns not yet active.*

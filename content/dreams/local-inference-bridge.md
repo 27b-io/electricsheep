@@ -139,4 +139,11 @@ Store in MCP memory for trend analysis.
 
 ---
 
+## Related Dreams
+
+- **[Cognitive Architecture](/dreams/cognitive-architecture/)** — Model routing in the Reasoning Layer
+- **[Machines That Think](/dreams/machines-that-think/)** — The Chinese Room running on local GPU
+
+---
+
 *Status: Dream. Blocked on vLLM deployment (see ~/code/27b.io/lab/VLLM_IMPLEMENTATION_PLAN.md)*

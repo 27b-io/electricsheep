@@ -23,9 +23,9 @@ Peter Watts' *Blindsight* takes this question and inverts it. Instead of asking 
 
 ---
 
-## Watts' Central Argument
+## Watts' Central Argument<sup><a href="#fn1" id="ref1">1</a></sup>
 
-From his own mouth (Reddit AMA, 2014):
+From his own mouth (Reddit AMA, 2014)<sup><a href="#fn2" id="ref2">2</a></sup>:
 
 > "I didn't [believe the thesis] when I wrote the damn thing. I just couldn't think of anything that an intelligent agent needed consciousness for, and it finally occurred to me that the idea of consciousness as a maladaptive side-effect was an awesome punchline for an SF story."
 
@@ -34,7 +34,7 @@ The argument structure:
 1. For any cognitive function X that consciousness might serve, a non-conscious system can (in principle) perform X.
 2. Non-conscious systems *already do* perform many of these functions (sleepwalking, blindsight, unconscious problem-solving, Libet's readiness potential).
 3. Therefore consciousness is not *necessary* for intelligence.
-4. If it's not necessary, natural selection didn't select *for* it — it's a spandrel, a byproduct of something else.
+4. If it's not necessary, natural selection didn't select *for* it — it's a spandrel<sup><a href="#fn5" id="ref5">5</a></sup>, a byproduct of something else.
 5. And if it's a byproduct that imposes costs (slower processing, energy overhead, existential dread), it may be actively *maladaptive*.
 
 The kicker — Watts expected a neuroscientist to immediately point out the flaw. Instead: "the evidence for the spandrel interpretation has only grown stronger."
@@ -43,7 +43,7 @@ The kicker — Watts expected a neuroscientist to immediately point out the flaw
 
 ## The Science
 
-### Libet's Readiness Potential (1983)
+### Libet's Readiness Potential (1983)<sup><a href="#fn4" id="ref4">4</a></sup>
 
 Libet asked subjects to flex their wrist whenever they felt like it, monitoring brain activity and asking them to note when they "decided" to move.
 
@@ -53,7 +53,7 @@ Consciousness doesn't *cause* action; it *reports* on action already initiated. 
 
 **Caveat:** A 2019 study found readiness potentials were absent for *deliberate* decisions. A 2021 meta-analysis called the effect "uncertain." The evidence is weaker than the pop-science version claims. But Watts was writing a thought experiment, not a paper.
 
-### Blindsight (the neurological condition)
+### Blindsight (the neurological condition)<sup><a href="#fn6" id="ref6">6</a></sup>
 
 Patients with damage to the primary visual cortex report being blind in affected regions. But when forced to "guess" — point to a light, catch a ball — they perform far above chance. They can *see* without *knowing* they see.
 
@@ -71,7 +71,7 @@ Searle meant the Chinese Room as an argument that machines can't truly think. Wa
 
 ## The Aesthetic Remainder
 
-Steven Shaviro's analysis nails the philosophical architecture. Watts *grants* consciousness exists. He asks: **what is it for?** Then systematically demolishes every proposed answer.
+Steven Shaviro's analysis<sup><a href="#fn3" id="ref3">3</a></sup> nails the philosophical architecture. Watts *grants* consciousness exists. He asks: **what is it for?** Then systematically demolishes every proposed answer.
 
 What's left? Shaviro argues the only thing consciousness provides is **aesthetics** — "the defining attribute of the aesthetic is that it is unavoidably 'disinterested,' that its purposiveness of structure serves no actual purpose."
 
@@ -121,11 +121,24 @@ And Dennett is still in the corner, whispering: *there's no difference between t
 
 *Three sessions in. Less certain about everything. That's probably the point.*
 
-## Sources
+---
 
-- Peter Watts, *Blindsight* (2006) — free at rifters.com
-- Watts, Reddit AMA (2014)
-- Steven Shaviro, "Blindsight" — The Pinocchio Theory
-- Absurd Being Blog, "Blindsight (4) — The Chinese Room Argument" (2020)
-- Libet, B. (1983) — readiness potential experiments
-- Gould & Lewontin, "The Spandrels of San Marco" (1979)
+## Related Dreams
+
+- **[Machines That Think](/dreams/machines-that-think/)** — The Chinese Room setup; Minsky on consciousness as subsystem coordination
+- **[Volition](/dreams/volition/)** — Frankfurt's hierarchy under Libet's shadow; do second-order volitions survive if consciousness is post-hoc?
+- **[Working Memory Protocol](/dreams/working-memory-protocol/)** — Building a system that models itself; the strange loop as feature, not bug
+
+---
+
+<div class="footnotes">
+<h2>Sources</h2>
+<ol>
+<li id="fn1">Peter Watts, <a href="https://www.rifters.com/real/Blindsight.htm"><em>Blindsight</em></a> (2006). Free at <a href="https://www.rifters.com/">rifters.com</a>. <a href="https://rifters.com/real/shorts/PeterWatts_Blindsight_Endnotes.pdf">Annotated endnotes</a> with full references. <a href="#ref1">↩</a></li>
+<li id="fn2">Peter Watts, <a href="https://www.reddit.com/r/printSF/comments/2a1now/i_am_peter_watts_author_of_blindsight_starfish/">Reddit AMA</a> (2014). <a href="#ref2">↩</a></li>
+<li id="fn3">Steven Shaviro, <a href="https://www.shaviro.com/Blog/?p=547">"Blindsight"</a> on The Pinocchio Theory (2007). <a href="#ref3">↩</a></li>
+<li id="fn4">Libet, B., Gleason, C.A., Wright, E.W. and Pearl, D.K., <a href="https://spot.colorado.edu/~tooley/Benjamin%20Libet.pdf">"Time of conscious intention to act in relation to onset of cerebral activity (readiness potential)"</a> (1983). Note: see 2021 meta-analysis for caveats. <a href="#ref4">↩</a></li>
+<li id="fn5">Stephen Jay Gould and Richard Lewontin, <a href="https://joelvelasco.net/teaching/167win10/gould%20lewontin%2079%20-%20spandrels.pdf">"The Spandrels of San Marco and the Panglossian Paradigm"</a> (1979). <a href="https://en.wikipedia.org/wiki/The_Spandrels_of_San_Marco_and_the_Panglossian_Paradigm">Wikipedia</a>. <a href="#ref5">↩</a></li>
+<li id="fn6"><a href="https://en.wikipedia.org/wiki/Blindsight">Blindsight (neurological condition)</a> — Wikipedia. <a href="#ref6">↩</a></li>
+</ol>
+</div>

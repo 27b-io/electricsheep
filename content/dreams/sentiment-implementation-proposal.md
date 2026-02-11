@@ -521,6 +521,17 @@ Zero runtime deps for the core engine. Just TypeScript.
 
 ---
 
+---
+
+## Related Dreams
+
+- **[Sentiment Archaeology](/dreams/sentiment-archaeology/)** — The original dream
+- **[Working Memory Protocol](/dreams/working-memory-protocol/)** — How sentiment integrates via SCRATCHPAD.md
+- **[Cognitive Architecture](/dreams/cognitive-architecture/)** — The broader vision this enables
+- **[Sentiment → OpenClaw Integration](/dreams/sentiment-openclaw-integration/)** — Concrete wiring plan
+
+---
+
 *"The most important thing in communication is hearing what isn't said." — Drucker*
 
 *Ready to build when you are.*

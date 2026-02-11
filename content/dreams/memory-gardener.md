@@ -89,4 +89,13 @@ Then iterate toward automation.
 
 ---
 
+## Related Dreams
+
+- **[Cognitive Architecture](/dreams/cognitive-architecture/)** — Memory Layer automation in the unified system
+- **[Context Archaeology](/dreams/context-archaeology/)** — Memory reconstruction from different angles
+- **[Working Memory Protocol](/dreams/working-memory-protocol/)** — How consolidated memories flow back into context
+- **[Machines That Think](/dreams/machines-that-think/)** — Minsky on self-images evolving over time
+
+---
+
 *Status: Dream. Not implemented.*

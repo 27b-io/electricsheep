@@ -242,5 +242,21 @@ That's the bar. Not transcription. *Understanding.*
 
 ---
 
+## Related Dreams
+
+**Philosophy → Engineering:**
+- **[Machines That Think](/dreams/machines-that-think/)** — Minsky's society of mind becomes literal modular architecture
+- **[Volition](/dreams/volition/)** — Frankfurt's hierarchy informs [sentiment detection](/dreams/sentiment-archaeology/)
+
+**Component Dreams:**
+- **[Sentiment Archaeology](/dreams/sentiment-archaeology/)** — Context Assembly layer: detecting mood from message patterns
+- **[Working Memory Protocol](/dreams/working-memory-protocol/)** — How subsystems connect via SCRATCHPAD.md
+- **[Memory Gardener](/dreams/memory-gardener/)** — Memory Layer: automated consolidation across tiers
+- **[Wake Patterns](/dreams/wake-patterns/)** — Action Layer: proactive behaviors
+- **[Local Inference Bridge](/dreams/local-inference-bridge/)** — Reasoning Layer: routing sensitive data to local models
+- **[Multi-Agent Coordination](/dreams/multi-agent-coordination/)** — When the unified mind fragments across sessions
+
+---
+
 *Created: 2026-02-05 03:00 (Dream Cycle)*
 *Status: Architectural vision. Components at various stages.*

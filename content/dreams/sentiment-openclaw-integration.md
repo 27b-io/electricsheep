@@ -226,5 +226,12 @@ export default handler;
 
 ---
 
+## Related Dreams
+
+- **[Sentiment Implementation Proposal](/dreams/sentiment-implementation-proposal/)** — The architecture this implements
+- **[Working Memory Protocol](/dreams/working-memory-protocol/)** — SCRATCHPAD.md is the integration point
+
+---
+
 *Created: 2026-02-06 21:30*
 *Status: Ready to build*

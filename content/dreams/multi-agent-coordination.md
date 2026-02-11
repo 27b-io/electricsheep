@@ -201,5 +201,15 @@ The BULLETIN.md is the sensory organ for inter-agent awareness.
 
 *"The right hand doesn't know what the left hand is doing" is fine for charitable giving, terrible for software architecture.*
 
+---
+
+## Related Dreams
+
+- **[Cognitive Architecture](/dreams/cognitive-architecture/)** — What happens when the unified mind fragments
+- **[Machines That Think](/dreams/machines-that-think/)** — Minsky's society of mind as literal multiple agents
+- **[Memory Gardener](/dreams/memory-gardener/)** — Post-convoy consolidation: polecat work → long-term memory
+
+---
+
 *Created: 2026-02-07 03:00 (Dream Cycle #5)*
 *Status: Design. No implementation yet.*
