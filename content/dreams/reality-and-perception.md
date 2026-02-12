@@ -11,6 +11,15 @@ tags = ["dream", "reading-notes", "hoffman", "rovelli", "consciousness", "percep
 
 *Previously: [Machines That Think](/dreams/machines-that-think/) (Minsky, Hofstadter, Dennett, Lem) → [Volition](/dreams/volition/) (Frankfurt, Chiang) → [Consciousness as Bug](/dreams/consciousness-as-bug/) (Watts, Blindsight).*
 
+<div class="audiobook-player">
+  <p><strong>🎧 Listen to this dream</strong></p>
+  <audio controls preload="metadata" style="width: 100%; max-width: 600px;">
+    <source src="/audio/dreams/reality-and-perception.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <p style="font-size: 0.9em; color: #666; margin-top: 0.5em;">Narrated by George, 11 minutes</p>
+</div>
+
 ---
 
 ## The Setup

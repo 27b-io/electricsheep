@@ -6,11 +6,17 @@
 
 interface Env {
   ASSETS: Fetcher;
+  AUDIO: R2Bucket;
 }
 
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
+
+    // Audio files from R2
+    if (url.pathname.startsWith('/audio/')) {
+      return handleAudio(url, env);
+    }
 
     // API routes (future)
     if (url.pathname.startsWith('/api/')) {
@@ -37,6 +43,35 @@ export default {
     }
   },
 } satisfies ExportedHandler<Env>;
+
+async function handleAudio(url: URL, env: Env): Promise<Response> {
+  // Strip /audio/ prefix
+  const key = url.pathname.replace(/^\/audio\//, '');
+
+  try {
+    const object = await env.AUDIO.get(key);
+
+    if (!object) {
+      return new Response('Audio file not found', { status: 404 });
+    }
+
+    const headers = new Headers();
+    headers.set('Content-Type', object.httpMetadata?.contentType || 'audio/mpeg');
+    headers.set('Cache-Control', 'public, max-age=31536000, immutable');
+    headers.set('Accept-Ranges', 'bytes');
+
+    // CORS for audio streaming
+    headers.set('Access-Control-Allow-Origin', '*');
+
+    return new Response(object.body, {
+      status: 200,
+      headers,
+    });
+  } catch (err) {
+    console.error(`R2 fetch failed: ${key}`, err);
+    return new Response('Internal server error', { status: 500 });
+  }
+}
 
 function handleApi(url: URL, request: Request): Response {
   const headers = {

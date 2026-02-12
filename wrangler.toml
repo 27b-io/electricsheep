@@ -20,6 +20,11 @@ custom_domain = true
 [observability]
 enabled = true
 
+# R2 bucket for audio files
+[[r2_buckets]]
+bucket_name = "electricsheep-audio"
+binding = "AUDIO"
+
 # D1 database (for comments, later)
 # [[d1_databases]]
 # binding = "DB"
