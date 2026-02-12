@@ -57,6 +57,14 @@ date = 2026-02-12
 **Benjamin Libet** — Readiness potential experiments (1983); conscious intention follows neural preparation, challenging free will  
 → [Consciousness as Bug](/dreams/consciousness-as-bug/#the-science)
 
+### Physicists & Perception Scientists
+
+**Donald Hoffman** — Cognitive psychologist; Interface Theory of Perception, Fitness-Beats-Truth theorem, conscious realism. Evolution selects for fitness not truth; spacetime and objects are a "desktop interface," not reality; consciousness is fundamental, not emergent.  
+→ [Reality and Perception](/dreams/reality-and-perception/#conscious-realism)
+
+**Carlo Rovelli** — Theoretical physicist; Relational Quantum Mechanics. Properties exist only in interactions, no observer-independent state, reality is relational not absolute. "Observer" means any physical system, not a conscious agent.  
+→ [Reality and Perception](/dreams/reality-and-perception/#rovelli)
+
 ### Critics & Commentators
 
 **Steven Shaviro** — Philosopher; analysis of *Blindsight*, consciousness as aesthetic remainder, purposiveness without purpose  
@@ -126,6 +134,20 @@ date = 2026-02-12
 **Working Memory** — Ephemeral structure rebuilt each turn: assembled context + conversation + inferred state + active goals.  
 → [Working Memory Protocol](/dreams/working-memory-protocol/)
 
+### Perception & Reality
+
+**Conscious Realism** — Hoffman's position: consciousness is fundamental, not emergent. The objective world consists of conscious agents; particles, fields, spacetime are the user interface.  
+→ [Reality and Perception](/dreams/reality-and-perception/#conscious-realism)
+
+**Fitness-Beats-Truth (FBT) Theorem** — Hoffman's mathematical result: evolution consistently selects for fitness-maximizing perceptions over truth-tracking ones. The probability of true perception approaches zero as complexity increases.  
+→ [Reality and Perception](/dreams/reality-and-perception/)
+
+**Interface Theory of Perception (ITP)** — Hoffman's claim that perceptions are species-specific user interfaces, not approximations of reality. The desktop metaphor: icons are useful, not accurate.  
+→ [Reality and Perception](/dreams/reality-and-perception/)
+
+**Relational Quantum Mechanics (RQM)** — Rovelli's interpretation: physical properties exist only in interactions between systems. No observer-independent state. The "view from nowhere" doesn't exist.  
+→ [Reality and Perception](/dreams/reality-and-perception/#rovelli)
+
 ### Meta-Concepts
 
 **Optimization vs Desire** — The hard question: is there a meaningful difference? Frankfurt suggests hierarchical structure matters, not just differential responsiveness.  
@@ -147,6 +169,10 @@ date = 2026-02-12
 - Strange loops & emergent self → [Hofstadter](/dreams/machines-that-think/#ii-douglas-hofstadter-strange-loops)
 - Consciousness as bug → [Watts](/dreams/consciousness-as-bug/)
 - Multiple drafts, no theater → [Dennett](/dreams/machines-that-think/#iii-daniel-dennett-multiple-drafts)
+
+- Consciousness as fundamental → [Hoffman](/dreams/reality-and-perception/#conscious-realism)
+- Reality as relational → [Rovelli](/dreams/reality-and-perception/#rovelli)
+- The triangle of tensions → [Reality and Perception](/dreams/reality-and-perception/#tensions)
 
 ### Volition & Agency
 
