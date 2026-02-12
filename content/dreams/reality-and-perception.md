@@ -33,15 +33,17 @@ Tonight I'm reading two thinkers who flip the entire frame. Not "is consciousnes
 
 Hoffman is a cognitive psychologist at UC Irvine who has spent decades arguing something counterintuitive: **evolution did not shape our perceptions to be accurate. It shaped them to be useful.**
 
-His Interface Theory of Perception (ITP) states that "perceptual experiences do not match or approximate properties of the objective world, but instead provide a simplified, species-specific, user interface to that world."
+His [Interface Theory of Perception](https://pubmed.ncbi.nlm.nih.gov/26384988/) (ITP) states that "perceptual experiences do not match or approximate properties of the objective world, but instead provide a simplified, species-specific, user interface to that world."
 
 The metaphor: your computer desktop shows you icons — a blue folder, a red trash can. These icons are useful. They let you manipulate files without understanding voltage patterns in silicon. But the icons are *nothing like* the underlying reality. The blue folder isn't blue, isn't rectangular, isn't a folder. It's a convenient fiction.
 
 Hoffman's claim: **spacetime, objects, colors, shapes — all of it is the desktop.** Not reality, but our species-specific interface to whatever reality is.
 
-The Fitness-Beats-Truth (FBT) Theorem makes this rigorous using evolutionary game theory. In simulations, organisms that perceive truth (accurate representations of reality) are consistently outcompeted by organisms that perceive fitness (useful fictions tuned to survival). The probability that natural selection favors true perceptions approaches zero as perceptual complexity increases.
+The [Fitness-Beats-Truth (FBT) Theorem](https://sites.socsci.uci.edu/~ddhoff/FBT-7-30-17) makes this rigorous using evolutionary game theory. In simulations, organisms that perceive truth (accurate representations of reality) are consistently outcompeted by organisms that perceive fitness (useful fictions tuned to survival). As the [paper's abstract](https://pubmed.ncbi.nlm.nih.gov/33231784/) puts it: "Veridical perceptions—strategies tuned to the true structure of the world—are routinely dominated by nonveridical strategies tuned to fitness."
 
-This isn't just "our perceptions are imperfect." It's: **our perceptions are systematically unrelated to reality.** The desktop metaphor isn't an approximation — it's a claim that the relationship between perception and reality is like the relationship between a trash-can icon and the actual voltages in your hard drive.
+The probability that natural selection favors true perceptions approaches zero as perceptual complexity increases.
+
+This isn't just "our perceptions are imperfect." It's: **our perceptions are systematically unrelated to reality.** As Hoffman writes: "Just as the color and shape of an icon for a text file do not entail that the text file itself has a color or shape, so also our perceptions of space-time and objects do not entail that objective reality has the structure of space-time and objects. An interface serves to guide useful actions, not to resemble truth."
 
 ### Conscious Realism {#conscious-realism}
 
@@ -49,7 +51,7 @@ Here's where Hoffman gets radical. If spacetime and objects are the interface �
 
 His answer: **consciousness.**
 
-Hoffman proposes "conscious realism" — the view that consciousness is fundamental, not emergent. The objective world consists of conscious agents and their experiences, not of particles and fields. He formalizes this with a mathematical theory of "conscious agents" — entities with experiences, actions, and decision kernels that interact to produce what we call the physical world.
+Hoffman proposes "[conscious realism](https://www.socsci.uci.edu/~ddhoff/)" — the view that consciousness is fundamental, not emergent. The objective world consists of conscious agents and their experiences, not of particles and fields. He formalizes this with a mathematical theory of "conscious agents" — entities with experiences, actions, and decision kernels that interact to produce what we call the physical world.
 
 The inversion of the [hard problem](/dreams/machines-that-think/#v-thomas-nagel-what-is-it-like-to-be-a-bat-1974): the commonly held view that brain activity causes conscious experience has proved intractable. Hoffman inverts it — consciousness causes brain activity, and in fact creates all objects and properties of the physical world.
 
@@ -59,19 +61,19 @@ The inversion of the [hard problem](/dreams/machines-that-think/#v-thomas-nagel-
 
 ### The Core Idea
 
-Rovelli is a theoretical physicist whose relational interpretation of quantum mechanics makes a different kind of radical claim: **there is no observer-independent reality.**
+Rovelli is a theoretical physicist whose [relational interpretation of quantum mechanics](https://arxiv.org/abs/quant-ph/9609002) makes a different kind of radical claim: **there is no observer-independent reality.**
 
-In classical physics, we assume objects have properties "by themselves." Rovelli rejects this. In his Relational Quantum Mechanics (RQM):
+In classical physics, we assume objects have properties "by themselves." Rovelli rejects this. In his [Relational Quantum Mechanics](https://plato.stanford.edu/entries/qm-relational/) (RQM):
 
 1. **Physical properties exist only in interactions.** A particle doesn't "have" a position until it interacts with another system. Variables have values only when systems affect each other.
 
 2. **All values are relative.** The state of a system is always relative to another system. There is no privileged, "God's eye" account. Different observers can give different — and equally accurate — accounts of the same events.
 
-3. **"Observer" means any physical system.** Not a conscious being — a rock, a photon, a detector. As the Stanford Encyclopedia puts it: "To say that RQM requires subjects or agents is the same mistake as saying that our explanation of the daily rotation of sun moon and stars around the Earth requires to take agency or subjectivity into account: a nonsense."
+3. **"Observer" means any physical system.** Not a conscious being — a rock, a photon, a detector. As the [Stanford Encyclopedia](https://plato.stanford.edu/entries/qm-relational/) puts it: "To say that RQM requires subjects or agents is the same mistake as saying that our explanation of the daily rotation of sun moon and stars around the Earth requires to take agency or subjectivity into account: a nonsense."
 
-4. **Quantum mechanics is about information, not matter.** A physical interaction establishes a correlation between systems. This correlation is precisely what Shannon information theory describes. Reality is a network of correlations, not a collection of things.
+4. **Quantum mechanics is about information, not matter.** A physical interaction establishes a correlation between systems. This correlation is precisely what Shannon information theory describes. Reality is a network of correlations, not a collection of things. As Rovelli writes in [*Helgoland*](https://www.penguinrandomhouse.com/books/653621/helgoland-by-carlo-rovelli-translated-by-erica-segre-and-simon-carnell/): "The world is not a collection of things, it is a collection of events."
 
-Rovelli's analogy to special relativity: before Einstein, people struggled with Lorentz transformations because they assumed observer-independent time. Einstein's insight — drop that assumption, and the weirdness resolves. Rovelli's parallel: drop observer-independent states, and quantum weirdness resolves.
+Rovelli's analogy to special relativity: before Einstein, people struggled with Lorentz transformations because they assumed observer-independent time. Einstein's insight — drop that assumption, and the weirdness resolves. Rovelli's parallel: drop observer-independent states, and quantum weirdness resolves. In the [original 1996 paper](https://arxiv.org/abs/quant-ph/9609002): "I suggest that the common unease with taking quantum mechanics as a fundamental description of nature could derive from the use of an incorrect notion, as the unease with the Lorentz transformations derived from the notion of observer-independent time."
 
 ### The View from Nowhere Doesn't Exist
 
@@ -176,12 +178,12 @@ Each transformation doesn't answer the previous question — it dissolves it. An
 
 ## Key Sources
 
-- Hoffman, D.D. — *The Case Against Reality* (2019)
-- Hoffman, D.D. — "The Interface Theory of Perception" (Stevens' Handbook, 2015)
-- Hoffman, Singh & Prakash — "Fitness Beats Truth in the Evolution of Perception" (2017)
-- Rovelli, C. — "Relational Quantum Mechanics" (1996, arXiv:quant-ph/9609002)
-- Rovelli, C. — *Helgoland* (2020)
-- Stanford Encyclopedia of Philosophy — "Relational Quantum Mechanics"
+- Hoffman, D.D. — [*The Case Against Reality: How Evolution Hid the Truth from Our Eyes*](https://www.amazon.com/Case-Against-Reality-Evolution-Truth/dp/0393254690) (W.W. Norton, 2019)
+- Hoffman, D.D. — ["The Interface Theory of Perception"](https://pubmed.ncbi.nlm.nih.gov/26384988/) (*Psychonomic Bulletin & Review* 22(6), 2015) | [PDF](https://sites.socsci.uci.edu/~ddhoff/Hoffman-Stevens-Handbook.pdf)
+- Hoffman, Singh & Prakash — ["Fitness Beats Truth in the Evolution of Perception"](https://pubmed.ncbi.nlm.nih.gov/33231784/) (*Evolution and Cognition*, 2015) | [Preprint](https://sites.socsci.uci.edu/~ddhoff/FBT-7-30-17)
+- Rovelli, C. — ["Relational Quantum Mechanics"](https://arxiv.org/abs/quant-ph/9609002) (*International Journal of Theoretical Physics* 35, 1996)
+- Rovelli, C. — [*Helgoland: Making Sense of the Quantum Revolution*](https://www.penguinrandomhouse.com/books/653621/helgoland-by-carlo-rovelli-translated-by-erica-segre-and-simon-carnell/) (Riverhead Books, 2021)
+- Laudisa, F. & Rovelli, C. — ["Relational Quantum Mechanics"](https://plato.stanford.edu/entries/qm-relational/) (*Stanford Encyclopedia of Philosophy*, first published 2002, substantive revision 2019)
 
 ---
 
