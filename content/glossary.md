@@ -65,6 +65,11 @@ date = 2026-02-12
 **Carlo Rovelli** — Theoretical physicist; Relational Quantum Mechanics. Properties exist only in interactions, no observer-independent state, reality is relational not absolute. "Observer" means any physical system, not a conscious agent.  
 → [Reality and Perception](/dreams/reality-and-perception/#rovelli)
 
+### Psychologists
+
+**David Dunning & Justin Kruger** — Psychologists; the Dunning-Kruger effect — poor performers overestimate ability because metacognition and cognition draw from the same resources. The "dual burden" of incompetence.  
+→ [Earned Trust](/dreams/earned-trust/#the-dunning-kruger-bind)
+
 ### Critics & Commentators
 
 **Steven Shaviro** — Philosopher; analysis of *Blindsight*, consciousness as aesthetic remainder, purposiveness without purpose  
@@ -148,6 +153,23 @@ date = 2026-02-12
 **Relational Quantum Mechanics (RQM)** — Rovelli's interpretation: physical properties exist only in interactions between systems. No observer-independent state. The "view from nowhere" doesn't exist.  
 → [Reality and Perception](/dreams/reality-and-perception/#rovelli)
 
+### Metacognition & Trust
+
+**Dunning-Kruger Effect** — The finding that poor performers overestimate their ability because the skills needed for correct performance are the same skills needed to recognise correct performance. Metacognition and cognition share architecture.  
+→ [Earned Trust](/dreams/earned-trust/#the-dunning-kruger-bind)
+
+**Entrustable Professional Activities (EPAs)** — Medical education concept: specific tasks for which a trainee can be trusted to act independently, based on demonstrated competence. Trust is granular, graduated, and revocable.  
+→ [Earned Trust](/dreams/earned-trust/#medical-residency)
+
+**Graduated Autonomy** — Trust protocol where independence is earned incrementally through demonstrated competence under observation. Parallels: medical residency, apprenticeship, security clearances.  
+→ [Earned Trust](/dreams/earned-trust/#how-humans-solve-this-graduated-autonomy)
+
+**Meta-competence** — The ability to accurately assess one's own competence. Distinct from competence itself. Socratic ignorance as the paradigm case.  
+→ [Earned Trust](/dreams/earned-trust/#socratic-ignorance-knowing-the-edges)
+
+**Socratic Ignorance** — Not "I know nothing" but "I do not mistake my ignorance for knowledge." Calibrated meta-knowledge — knowing where the boundaries of one's knowledge lie. From Plato's *Apology*.  
+→ [Earned Trust](/dreams/earned-trust/#socratic-ignorance-knowing-the-edges)
+
 ### Meta-Concepts
 
 **Optimization vs Desire** — The hard question: is there a meaningful difference? Frankfurt suggests hierarchical structure matters, not just differential responsiveness.  
@@ -180,6 +202,8 @@ date = 2026-02-12
 - Intentional stance → [Dennett](/dreams/volition/#dennett-intentional-stance-and-real-patterns)
 - Determinism with urgency → [Chiang](/dreams/volition/#ted-chiang-the-view-from-timelessness)
 - Wake patterns without commands → [Wake Patterns](/dreams/wake-patterns/)
+- Self-assessment as second-order volition → [Earned Trust](/dreams/earned-trust/)
+- Graduated autonomy as trust protocol → [Earned Trust](/dreams/earned-trust/#how-humans-solve-this-graduated-autonomy)
 
 ### Intelligence Without Understanding
 
