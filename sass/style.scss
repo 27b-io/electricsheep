@@ -163,6 +163,7 @@ body {
     }
 
     a {
+      color: inherit;
       text-decoration: none;
       display: block;
     }
@@ -188,15 +189,10 @@ body {
   font-family: $serif;
   font-size: 1.25rem;
   font-weight: 400;
+  color: $fg;
   margin-bottom: 0.3rem;
   transition: color 0.3s ease;
 
-  a {
-    color: $fg;
-    text-decoration: none;
-  }
-
-  li:hover & a,
   li:hover & {
     color: $accent;
   }
