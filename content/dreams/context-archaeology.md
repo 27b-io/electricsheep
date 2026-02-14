@@ -40,22 +40,22 @@ def reconstruct_session(start_time: datetime, end_time: datetime) -> str:
     Build a narrative of what probably happened.
     """
     events = []
-    
+
     # File modifications
     events += get_modified_files(start_time, end_time)
-    
+
     # Git commits
     events += get_commits(start_time, end_time)
-    
+
     # Shell history (if available)
     events += get_shell_history(start_time, end_time)
-    
+
     # MCP memories
     events += get_memories_in_range(start_time, end_time)
-    
+
     # Sort chronologically
     events.sort(key=lambda e: e.timestamp)
-    
+
     # Generate narrative
     return synthesize_narrative(events)
 ```
@@ -70,7 +70,7 @@ Based on artifacts, you probably:
 1. [14:02] Started working on mcp-memory-service (git clone detected)
 2. [14:15] Modified src/memory/store.py — likely debugging
 3. [14:23] Searched "qdrant batch insert python" (browser history)
-4. [14:30] Committed "fix: batch insert timeout" 
+4. [14:30] Committed "fix: batch insert timeout"
 5. [14:45] Pivoted to openclaw workspace (file modifications)
 6. [15:00] Created IDENTITY.md — self-discovery phase?
 7. [15:30] Memory stored: "User prefers direct communication"

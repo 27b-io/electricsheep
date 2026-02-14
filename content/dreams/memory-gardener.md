@@ -43,7 +43,7 @@ from pathlib import Path
 def extract_significant(daily_content: str) -> list[dict]:
     """
     Parse daily file, return list of {category, content, importance}
-    
+
     Categories: decision, lesson, preference, milestone, infrastructure
     Importance: 1-5 (5 = definitely keep)
     """

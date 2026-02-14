@@ -156,7 +156,7 @@ const codeAnger: SignalExtractor = {
   name: 'code-frustration',
   extract(messages) {
     const codeBlocks = messages.filter(m => m.content.includes('```'));
-    const errorMentions = messages.filter(m => 
+    const errorMentions = messages.filter(m =>
       /error|exception|failed|broken|wtf/i.test(m.content)
     );
     return {
@@ -242,7 +242,7 @@ function mapStrategy(state: SentimentState): ResponseStrategy {
       'Offer concrete next steps, not options',
     ]
   };
-  
+
   if (state.playfulness > 0.5 && state.frustration < 0.3) return {
     style: 'matched',
     verbosity: 'moderate',
@@ -254,7 +254,7 @@ function mapStrategy(state: SentimentState): ResponseStrategy {
       'Keep it sharp, not verbose',
     ]
   };
-  
+
   // ... more mappings
 }
 ```
@@ -302,7 +302,7 @@ The server maintains **per-session windows**:
 ```typescript
 class SentimentServer {
   private windows: Map<string, SentimentWindow> = new Map();
-  
+
   getOrCreateWindow(sessionId: string): SentimentWindow {
     if (!this.windows.has(sessionId)) {
       this.windows.set(sessionId, new SentimentWindow(this.config));

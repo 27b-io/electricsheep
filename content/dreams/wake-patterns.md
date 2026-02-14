@@ -21,7 +21,7 @@ But: there's a line between helpful and annoying. Stay on the right side.
 
 ### 1. Morning Brief
 **Trigger:** First interaction after 6 AM local time (or cron at 7 AM)
-**Action:** 
+**Action:**
 - Weather for today
 - Calendar events in next 12h
 - Unread emails flagged important

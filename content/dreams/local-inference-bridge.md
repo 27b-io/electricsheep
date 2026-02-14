@@ -119,7 +119,7 @@ def should_swap(current: str, requested: str) -> bool:
 ## Fallback Chain
 
 ```
-Local (privacy-safe) 
+Local (privacy-safe)
   ↓ (if unavailable or overloaded)
 Claude (most capable)
   ↓ (if rate limited)  

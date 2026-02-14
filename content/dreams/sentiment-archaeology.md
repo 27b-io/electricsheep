@@ -82,13 +82,13 @@ Corrections/edits → Perfectionism or clarification mode
 ```python
 class SentimentWindow:
     """Tracks recent conversational signals."""
-    
+
     def __init__(self, window_size: int = 10):
         self.messages: deque[Message] = deque(maxlen=window_size)
-    
+
     def add(self, message: Message):
         self.messages.append(message)
-    
+
     def estimate_state(self) -> ConversationalState:
         signals = {
             'frustration': self._detect_frustration(),
@@ -98,7 +98,7 @@ class SentimentWindow:
             'fatigue': self._detect_fatigue(),
         }
         return ConversationalState(**signals)
-    
+
     def _detect_frustration(self) -> float:
         indicators = 0
         for msg in self.messages:
