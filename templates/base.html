@@ -9,16 +9,16 @@
   <link rel="alternate" type="application/atom+xml" title="{{ config.title }}" href="{{ get_url(path='atom.xml') }}">
 </head>
 <body>
+  <div class="scroll-progress"></div>
+
   <header class="site-header">
-    <div class="container">
-      <div class="site-title"><a href="{{ config.base_url }}">{{ config.title }}</a></div>
-      <div class="site-tagline">{{ config.extra.tagline }}</div>
-      <nav>
-        <a href="{{ config.base_url }}">dreams</a>
-        <a href="{{ get_url(path='@/about.md') }}">about</a>
-        <a href="{{ get_url(path='atom.xml') }}">feed</a>
-      </nav>
-    </div>
+    <div class="site-title"><a href="{{ config.base_url }}">{{ config.title }}</a></div>
+    <div class="site-tagline">{{ config.extra.tagline }}</div>
+    <nav>
+      <a href="{{ config.base_url }}">dreams</a>
+      <a href="{{ get_url(path='@/about.md') }}">about</a>
+      <a href="{{ get_url(path='atom.xml') }}">feed</a>
+    </nav>
   </header>
 
   <main class="container">
@@ -26,9 +26,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      {{ config.extra.author }} · {{ now() | date(format="%Y") }}
-    </div>
+    {{ config.extra.author }} · {{ now() | date(format="%Y") }}
   </footer>
 </body>
 </html>

@@ -1,18 +1,21 @@
-// Electric Sheep — minimal dark literary theme
+// Electric Sheep — dark literary theme
+// A philosophical reading journal written at 3 AM
 
-:root {
-  --bg: #0a0a0f;
-  --bg-alt: #12121a;
-  --fg: #c8c8d0;
-  --fg-dim: #6a6a7a;
-  --fg-bright: #e8e8f0;
-  --accent: #7a9cc6;
-  --accent-dim: #4a6a8a;
-  --border: #1e1e2a;
-  --code-bg: #0f0f18;
-  --serif: 'Georgia', 'Times New Roman', serif;
-  --mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
-}
+// ─── Palette ────────────────────────────────────
+
+$bg:          #0a0a0f;
+$bg-raised:   #111118;
+$bg-surface:  #16161f;
+$fg:          #c8c8d0;
+$fg-muted:    #6a6a78;
+$fg-dim:      #3e3e4a;
+$accent:      #7a9cc6;
+$accent-warm: #c6a07a;
+$border:      #1e1e2a;
+$serif:       'Georgia', 'Times New Roman', Times, serif;
+$mono:        'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+
+// ─── Reset ──────────────────────────────────────
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -20,114 +23,194 @@
   padding: 0;
 }
 
+::selection {
+  background: rgba($accent, 0.25);
+  color: $fg;
+}
+
+:focus-visible {
+  outline: 2px solid $accent;
+  outline-offset: 3px;
+}
+
 html {
   font-size: 18px;
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-  background: var(--bg);
-  color: var(--fg);
-  font-family: var(--serif);
+  background-color: $bg;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+  color: $fg;
+  font-family: $serif;
   line-height: 1.7;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
-// ─── Layout ──────────────────────────────────────
+// ─── Scroll progress ────────────────────────────
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  z-index: 1000;
+  background: transparent;
+  pointer-events: none;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, $accent, $accent-warm);
+    transform-origin: left;
+    animation: scroll-progress linear;
+    animation-timeline: scroll(root);
+  }
+}
+
+@keyframes scroll-progress {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+// ─── Layout ─────────────────────────────────────
 
 .container {
-  max-width: 640px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 0 1.5rem;
   width: 100%;
 }
 
-// ─── Header ──────────────────────────────────────
+// ─── Header ─────────────────────────────────────
 
 .site-header {
-  padding: 3rem 0 2rem;
-  border-bottom: 1px solid var(--border);
+  padding: 3rem 1.5rem 2rem;
+  text-align: center;
+  border-bottom: 1px solid $border;
   margin-bottom: 3rem;
 
   .site-title {
-    font-size: 1.4rem;
+    font-family: $serif;
+    font-size: 1.5rem;
     font-weight: 400;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
 
     a {
-      color: var(--fg-bright);
+      color: $fg;
       text-decoration: none;
+      transition: color 0.3s ease;
 
-      &:hover {
-        color: var(--accent);
-      }
+      &:hover { color: $accent; }
     }
   }
 
   .site-tagline {
-    color: var(--fg-dim);
-    font-size: 0.85rem;
-    font-style: italic;
-    margin-top: 0.3rem;
+    font-family: $mono;
+    font-size: 0.7rem;
+    color: $fg-muted;
+    margin-top: 0.4rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
   }
 
   nav {
-    margin-top: 1rem;
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
 
     a {
-      color: var(--fg-dim);
+      font-family: $mono;
+      font-size: 0.72rem;
+      color: $fg-muted;
       text-decoration: none;
-      font-size: 0.85rem;
-      margin-right: 1.5rem;
+      letter-spacing: 0.03em;
+      transition: color 0.3s ease;
 
-      &:hover {
-        color: var(--accent);
-      }
+      &:hover { color: $accent; }
     }
   }
 }
 
-// ─── Post list ───────────────────────────────────
+// ─── Post list ──────────────────────────────────
 
 .post-list {
   list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 700px;
 
   li {
-    margin-bottom: 2.5rem;
+    padding: 1.5rem 1.5rem 1.5rem 1.8rem;
+    border-left: 2px solid transparent;
+    transition: border-color 0.4s ease, background-color 0.4s ease;
+    margin-bottom: 0.25rem;
+
+    &:hover {
+      border-left-color: $accent;
+      background-color: rgba($accent, 0.03);
+    }
+
+    a {
+      text-decoration: none;
+      display: block;
+    }
   }
 }
 
 .post-date {
-  color: var(--fg-dim);
-  font-family: var(--mono);
-  font-size: 0.75rem;
+  font-family: $mono;
+  font-size: 0.7rem;
+  color: $fg-dim;
+  letter-spacing: 0.06em;
   display: block;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.35rem;
+
+  &::before {
+    content: '>';
+    margin-right: 0.5em;
+    color: $fg-dim;
+  }
 }
 
 .post-title {
-  font-size: 1.2rem;
+  font-family: $serif;
+  font-size: 1.25rem;
   font-weight: 400;
+  margin-bottom: 0.3rem;
+  transition: color 0.3s ease;
 
   a {
-    color: var(--fg-bright);
+    color: $fg;
     text-decoration: none;
+  }
 
-    &:hover {
-      color: var(--accent);
-    }
+  li:hover & a,
+  li:hover & {
+    color: $accent;
   }
 }
 
 .post-summary {
-  color: var(--fg-dim);
-  font-size: 0.9rem;
-  margin-top: 0.4rem;
+  font-family: $serif;
+  font-size: 0.85rem;
+  color: $fg-muted;
+  line-height: 1.5;
+  font-style: italic;
 }
 
-// ─── Article ─────────────────────────────────────
+// ─── Article ────────────────────────────────────
 
 article {
   margin-bottom: 4rem;
@@ -136,149 +219,465 @@ article {
     margin-bottom: 2.5rem;
 
     h1 {
-      font-size: 1.6rem;
+      font-size: 2.4rem;
       font-weight: 400;
-      color: var(--fg-bright);
-      line-height: 1.3;
+      color: $fg;
+      line-height: 1.2;
     }
 
     .post-meta {
-      color: var(--fg-dim);
-      font-family: var(--mono);
-      font-size: 0.75rem;
-      margin-top: 0.5rem;
+      color: $fg-dim;
+      font-family: $mono;
+      font-size: 0.72rem;
+      margin-top: 0.8rem;
+      letter-spacing: 0.04em;
     }
   }
 }
 
-// ─── Prose ───────────────────────────────────────
+// ─── Prose ──────────────────────────────────────
 
 .prose {
-  h2 {
-    font-size: 1.15rem;
+  // Drop cap on first paragraph (or first paragraph after a figure)
+  > p:first-of-type::first-letter,
+  > figure:first-child + p::first-letter {
+    font-family: $serif;
+    float: left;
+    font-size: 3.8em;
+    line-height: 0.8;
+    padding-right: 0.08em;
+    padding-top: 0.07em;
+    color: $accent;
     font-weight: 400;
-    color: var(--fg-bright);
-    margin: 2.5rem 0 1rem;
-    padding-bottom: 0.3rem;
-    border-bottom: 1px solid var(--border);
-  }
-
-  h3 {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--fg-bright);
-    margin: 2rem 0 0.8rem;
   }
 
   p {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.4rem;
+    line-height: 1.75;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: $fg;
+    margin: 3rem 0 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid $border;
+  }
+
+  h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: $fg;
+    margin: 2rem 0 0.8rem;
   }
 
   a {
-    color: var(--accent);
-    text-decoration: none;
+    color: $accent;
+    text-decoration: underline;
+    text-decoration-color: rgba($accent, 0.3);
+    text-underline-offset: 0.15em;
+    transition: text-decoration-color 0.3s ease;
 
     &:hover {
-      text-decoration: underline;
+      text-decoration-color: $accent;
     }
   }
 
   blockquote {
-    border-left: 2px solid var(--accent-dim);
-    padding: 0.5rem 0 0.5rem 1.2rem;
-    margin: 1.5rem 0;
-    color: var(--fg-dim);
+    border-left: 2px solid $accent;
+    padding: 0.3rem 0 0.3rem 1.5rem;
+    margin: 2rem 0;
+    color: rgba($fg, 0.85);
     font-style: italic;
+
+    p { margin-bottom: 0; }
   }
 
   ul, ol {
-    margin: 1rem 0;
     padding-left: 1.5rem;
+    margin-bottom: 1.4rem;
+
+    li {
+      margin-bottom: 0.4rem;
+      line-height: 1.65;
+    }
   }
 
-  li {
-    margin-bottom: 0.4rem;
+  ul {
+    list-style: none;
+
+    li::before {
+      content: '—';
+      color: $fg-dim;
+      display: inline-block;
+      width: 1.5em;
+      margin-left: -1.5em;
+    }
   }
 
   code {
-    font-family: var(--mono);
-    font-size: 0.85rem;
-    background: var(--code-bg);
-    padding: 0.15rem 0.4rem;
+    font-family: $mono;
+    font-size: 0.82em;
+    color: $accent-warm;
+    background: rgba($accent-warm, 0.08);
+    padding: 0.15em 0.35em;
     border-radius: 3px;
   }
 
   pre {
-    background: var(--code-bg);
-    padding: 1.2rem;
+    background: $bg-raised;
+    border: 1px solid $border;
     border-radius: 4px;
+    padding: 1.2rem 1.4rem;
     overflow-x: auto;
-    margin: 1.5rem 0;
-    border: 1px solid var(--border);
+    margin: 2rem 0;
+    font-size: 0.82rem;
+    line-height: 1.6;
 
     code {
       background: none;
       padding: 0;
+      color: $fg;
     }
   }
 
   table {
     width: 100%;
+    margin: 2rem 0;
     border-collapse: collapse;
-    margin: 1.5rem 0;
-    font-size: 0.9rem;
+    font-size: 0.88rem;
 
     th, td {
-      padding: 0.5rem 0.8rem;
-      border: 1px solid var(--border);
+      padding: 0.6rem 1rem;
+      border-bottom: 1px solid $border;
       text-align: left;
     }
 
     th {
-      color: var(--fg-bright);
-      background: var(--bg-alt);
+      font-family: $mono;
+      font-size: 0.72rem;
+      color: $fg-muted;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 400;
+    }
+
+    tr:hover td {
+      background: rgba($accent, 0.03);
     }
   }
 
+  // Section dividers
   hr {
     border: none;
-    border-top: 1px solid var(--border);
-    margin: 2.5rem 0;
+    margin: 3.5rem auto;
+    height: auto;
+    text-align: center;
+    overflow: visible;
+
+    &::after {
+      content: '· · ·';
+      display: block;
+      letter-spacing: 0.8em;
+      color: $fg-dim;
+      font-size: 1.2rem;
+    }
   }
 
   em {
-    color: var(--fg-dim);
+    color: rgba($fg, 0.85);
   }
 
   strong {
-    color: var(--fg-bright);
+    color: lighten($fg, 8%);
     font-weight: 600;
   }
 
-  img {
-    max-width: 100%;
-    border-radius: 4px;
+  // ─── Figures (breakout) ─────────────────────
+
+  figure {
+    margin: 3rem 0;
+    width: calc(100% + 8rem);
+    margin-left: -4rem;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 3px;
+      border: 1px solid $border;
+      box-shadow:
+        0 4px 30px rgba(0, 0, 0, 0.4),
+        0 0 60px rgba($accent, 0.06);
+
+      // Fade-in on scroll (CSS View Timeline)
+      animation: figure-reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 30%;
+    }
+
+    figcaption {
+      max-width: 700px;
+      margin: 0.8rem auto 0;
+      padding: 0 1rem;
+      font-size: 0.75rem;
+      color: $fg-muted;
+      line-height: 1.5;
+      font-style: italic;
+
+      p { margin-bottom: 0; }
+    }
   }
 }
 
-// ─── Footer ──────────────────────────────────────
+@keyframes figure-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// ─── Pull quote shortcode ───────────────────────
+
+.pull-quote {
+  position: relative;
+  max-width: 920px;
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: $fg;
+  font-style: italic;
+  width: calc(100% + 6rem);
+  margin-left: -3rem;
+
+  &::before {
+    content: '\201C';
+    display: block;
+    font-size: 4rem;
+    line-height: 1;
+    color: $accent;
+    opacity: 0.4;
+    margin-bottom: 0.5rem;
+    font-family: $serif;
+  }
+
+  cite {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-family: $mono;
+    color: $fg-muted;
+    letter-spacing: 0.03em;
+  }
+}
+
+// ─── Audio player ───────────────────────────────
+
+.audio-wrapper,
+.audiobook-player {
+  margin: 2.5rem 0;
+  padding: 1.2rem 1.5rem;
+  background: $bg-raised;
+  border: 1px solid $border;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+
+  p:first-child,
+  .audio-label {
+    font-family: $mono;
+    font-size: 0.7rem;
+    color: $fg-muted;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  p:last-child {
+    font-family: $mono;
+    font-size: 0.68rem;
+    color: $fg-dim;
+    margin-bottom: 0;
+  }
+
+  audio {
+    width: 100%;
+    height: 36px;
+    border-radius: 3px;
+    outline: none;
+  }
+}
+
+// ─── Footnotes ──────────────────────────────────
+
+.footnotes {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid $border;
+  font-size: 0.82rem;
+  color: $fg-muted;
+  line-height: 1.6;
+
+  &-title {
+    font-family: $mono;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $fg-dim;
+    margin-bottom: 1rem;
+  }
+
+  ol {
+    padding-left: 1.5rem;
+    list-style: decimal;
+
+    li {
+      margin-bottom: 0.6rem;
+
+      &::marker {
+        color: $accent;
+        font-family: $mono;
+        font-size: 0.75rem;
+      }
+
+      // Override prose em-dash for footnote lists
+      &::before { content: none; }
+    }
+  }
+
+  a {
+    color: $accent;
+    text-decoration-color: rgba($accent, 0.3);
+  }
+}
+
+// ─── Related dreams ─────────────────────────────
+
+.related-dreams {
+  margin-top: 4rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid $border;
+
+  .related-heading {
+    font-family: $mono;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $fg-dim;
+    margin-bottom: 1.5rem;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .related-card {
+    display: block;
+    padding: 1.2rem 1.4rem;
+    background: $bg-raised;
+    border: 1px solid $border;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+
+    &:hover {
+      border-color: $accent;
+      background: rgba($accent, 0.04);
+    }
+
+    .related-date {
+      font-family: $mono;
+      font-size: 0.65rem;
+      color: $fg-dim;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.3rem;
+    }
+
+    .related-title {
+      font-family: $serif;
+      font-size: 0.95rem;
+      color: $fg;
+      margin-bottom: 0.3rem;
+      transition: color 0.3s ease;
+    }
+
+    &:hover .related-title {
+      color: $accent;
+    }
+
+    .related-desc {
+      font-size: 0.78rem;
+      color: $fg-muted;
+      font-style: italic;
+      line-height: 1.4;
+    }
+  }
+}
+
+// ─── Footer ─────────────────────────────────────
 
 .site-footer {
   margin-top: auto;
-  padding: 2rem 0;
-  border-top: 1px solid var(--border);
+  padding: 2.5rem 1.5rem;
+  border-top: 1px solid $border;
   text-align: center;
-  color: var(--fg-dim);
-  font-size: 0.75rem;
-  font-family: var(--mono);
+  color: $fg-dim;
+  font-size: 0.68rem;
+  font-family: $mono;
+  letter-spacing: 0.04em;
 }
 
-// ─── Responsive ──────────────────────────────────
+// ─── Responsive ─────────────────────────────────
+
+@media (max-width: 900px) {
+  .prose figure {
+    width: calc(100% + 3rem);
+    margin-left: -1.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .pull-quote {
+    width: 100%;
+    margin-left: 0;
+  }
+}
 
 @media (max-width: 600px) {
   html { font-size: 16px; }
 
   .site-header {
-    padding: 2rem 0 1.5rem;
+    padding: 2rem 1.5rem 1.5rem;
+  }
+
+  article .post-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .prose figure {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .pull-quote {
+    width: 100%;
+    margin-left: 0;
+    padding: 1.5rem 1rem;
+    font-size: 1.1rem;
+  }
+
+  .related-dreams .related-grid {
+    grid-template-columns: 1fr;
   }
 }

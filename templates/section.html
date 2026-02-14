@@ -8,11 +8,13 @@
 <ul class="post-list">
   {% for page in section.pages %}
   <li>
-    <span class="post-date">{{ page.date | date(format="%Y-%m-%d · %H:%M") }}</span>
-    <div class="post-title"><a href="{{ page.permalink }}">{{ page.title }}</a></div>
-    {% if page.description %}
-    <div class="post-summary">{{ page.description }}</div>
-    {% endif %}
+    <a href="{{ page.permalink }}">
+      <span class="post-date">{{ page.date | date(format="%Y-%m-%d · %H:%M") }}</span>
+      <div class="post-title">{{ page.title }}</div>
+      {% if page.description %}
+      <div class="post-summary">{{ page.description }}</div>
+      {% endif %}
+    </a>
   </li>
   {% endfor %}
 </ul>
