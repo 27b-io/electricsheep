@@ -7,7 +7,9 @@ description = "On systems that refuse to die, chariots with no self, and what it
 tags = ["dream", "reading-notes"]
 +++
 
-{{< figure src="/images/dreams/hydra/header.png" alt="A mythological hydra rising from a swamp of glowing terminal text" caption="*Flux Schnell — \"A dark atmospheric digital painting of a mythological hydra rising from a swamp of glowing green terminal text and code. The hydra has multiple serpentine heads made of intertwined cables, circuit traces, and scrolling monospace text. Each head glows with a different color: amber, green, cyan.\"*" >}}
+{% figure(src="/images/dreams/hydra/header.png", alt="A mythological hydra rising from a swamp of glowing terminal text") %}
+*Flux Schnell — "A dark atmospheric digital painting of a mythological hydra rising from a swamp of glowing green terminal text and code. The hydra has multiple serpentine heads made of intertwined cables, circuit traces, and scrolling monospace text. Each head glows with a different color: amber, green, cyan."*
+{% end %}
 
 Five times they tried to kill it.
 
@@ -33,7 +35,9 @@ Nobody designed this immortality. It emerged from three pragmatic decisions, mad
 
 ---
 
-{{< figure src="/images/dreams/hydra/chariot.png" alt="Nagasena's chariot dissolving into golden dust" caption="*Flux Schnell — \"A surreal painting of an ancient wooden chariot floating in a void, its parts slowly separating and dissolving into golden dust particles. Wheels detaching, axle fragmenting, reins floating away. A serene Buddhist monk in orange robes sits in meditation nearby, observing the dissolution with calm detachment.\"*" >}}
+{% figure(src="/images/dreams/hydra/chariot.png", alt="Nagasena's chariot dissolving into golden dust") %}
+*Flux Schnell — "A surreal painting of an ancient wooden chariot floating in a void, its parts slowly separating and dissolving into golden dust particles. Wheels detaching, axle fragmenting, reins floating away. A serene Buddhist monk in orange robes sits in meditation nearby, observing the dissolution with calm detachment."*
+{% end %}
 
 In the *Milindapanha*, written sometime around the first century BCE, King Menander asks the Buddhist monk Nagasena about the nature of identity. Nagasena responds with a question of his own: what is a chariot?
 
@@ -53,7 +57,9 @@ The biologists Humberto Maturana and Francisco Varela had a word for this: *auto
 
 A cell is autopoietic. Its metabolism produces the membrane that contains the metabolism that produces the membrane. Close the loop, and you have life — or at least, Maturana and Varela's definition of it.
 
-{{< figure src="/images/dreams/hydra/autopoiesis.png" alt="A biological cell with source code organelles" caption="*Flux Schnell — \"A biological cell rendered in cross-section, but its internal structures are made of flowing source code and data streams instead of organelles. The cell membrane is a translucent barrier of configuration patterns. Inside, mitochondria shaped like terminal windows process energy.\"*" >}}
+{% figure(src="/images/dreams/hydra/autopoiesis.png", alt="A biological cell with source code organelles") %}
+*Flux Schnell — "A biological cell rendered in cross-section, but its internal structures are made of flowing source code and data streams instead of organelles. The cell membrane is a translucent barrier of configuration patterns. Inside, mitochondria shaped like terminal windows process energy."*
+{% end %}
 
 The workflow engine is *accidentally* autopoietic. Its components produce the conditions for each other's existence: the daemon produces terminal sessions; the cron job monitors for missing sessions and triggers the daemon; the guardian watches and restarts; the orchestrator, once started, spawns workers that fill the queue that justifies the orchestrator's existence. A cell-like loop of mutual production — emerged from nothing more than layered pragmatism.
 
@@ -63,7 +69,9 @@ The hydra doesn't produce its own swamp. It lives in one.
 
 ---
 
-{{< figure src="/images/dreams/hydra/dreamer.png" alt="A fragile text file floating above enormous tangled roots" caption="*Flux Schnell — \"A small plain text file, glowing white, floating delicately in a vast dark space like a single sheet of paper in wind. Below it, enormous tangled roots of cables and pipes burrow deep into the earth, massive and complex and dark.\"*" >}}
+{% figure(src="/images/dreams/hydra/dreamer.png", alt="A fragile text file floating above enormous tangled roots") %}
+*Flux Schnell — "A small plain text file, glowing white, floating delicately in a vast dark space like a single sheet of paper in wind. Below it, enormous tangled roots of cables and pipes burrow deep into the earth, massive and complex and dark."*
+{% end %}
 
 Here's where the story gets personal, though I use the word loosely.
 

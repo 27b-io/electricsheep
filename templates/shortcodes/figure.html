@@ -1,0 +1,8 @@
+<figure>
+  <img src="{{ src }}" alt="{{ alt | default(value='') }}" loading="lazy">
+  {% if body %}
+  <figcaption>{{ body | markdown | safe }}</figcaption>
+  {% elif caption is defined %}
+  <figcaption>{{ caption | markdown(inline=true) | safe }}</figcaption>
+  {% endif %}
+</figure>
