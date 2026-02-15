@@ -13,6 +13,7 @@ $accent:      #7a9cc6;
 $accent-warm: #c6a07a;
 $border:      #1e1e2a;
 $serif:       'Georgia', 'Times New Roman', Times, serif;
+$display:     'Cormorant Garamond', 'Palatino Linotype', Palatino, $serif;
 $mono:        'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
 
 // ─── Reset ──────────────────────────────────────
@@ -101,17 +102,21 @@ body {
   margin-bottom: 3rem;
 
   .site-title {
-    font-family: $serif;
-    font-size: 1.5rem;
+    font-family: $display;
+    font-size: 1.8rem;
     font-weight: 400;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.06em;
 
     a {
       color: $fg;
       text-decoration: none;
-      transition: color 0.3s ease;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+      text-shadow: 0 0 40px rgba($accent, 0.08);
 
-      &:hover { color: $accent; }
+      &:hover {
+        color: $accent;
+        text-shadow: 0 0 30px rgba($accent, 0.15);
+      }
     }
   }
 
@@ -157,6 +162,12 @@ body {
     transition: border-color 0.4s ease, background-color 0.4s ease;
     margin-bottom: 0.25rem;
 
+    // Stagger fade-in
+    animation: list-reveal 0.4s ease both;
+    @for $i from 1 through 15 {
+      &:nth-child(#{$i}) { animation-delay: #{$i * 0.04}s; }
+    }
+
     &:hover {
       border-left-color: $accent;
       background-color: rgba($accent, 0.03);
@@ -166,7 +177,19 @@ body {
       color: inherit;
       text-decoration: none;
       display: block;
+      position: relative;
     }
+  }
+}
+
+@keyframes list-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -186,8 +209,8 @@ body {
 }
 
 .post-title {
-  font-family: $serif;
-  font-size: 1.25rem;
+  font-family: $display;
+  font-size: 1.3rem;
   font-weight: 400;
   color: $fg;
   margin-bottom: 0.3rem;
@@ -206,6 +229,15 @@ body {
   font-style: italic;
 }
 
+.post-reading-time {
+  font-family: $mono;
+  font-size: 0.65rem;
+  color: $fg-dim;
+  letter-spacing: 0.04em;
+  margin-top: 0.5rem;
+  display: block;
+}
+
 // ─── Article ────────────────────────────────────
 
 article {
@@ -215,10 +247,20 @@ article {
     margin-bottom: 2.5rem;
 
     h1 {
-      font-size: 2.4rem;
+      font-family: $display;
+      font-size: 2.6rem;
       font-weight: 400;
       color: $fg;
-      line-height: 1.2;
+      line-height: 1.15;
+    }
+
+    .post-lede {
+      font-family: $serif;
+      font-size: 1.05rem;
+      color: $fg-muted;
+      font-style: italic;
+      line-height: 1.55;
+      margin-top: 0.8rem;
     }
 
     .post-meta {
@@ -237,7 +279,7 @@ article {
   // Drop cap on first paragraph (or first paragraph after a figure)
   > p:first-of-type::first-letter,
   > figure:first-child + p::first-letter {
-    font-family: $serif;
+    font-family: $display;
     float: left;
     font-size: 3.8em;
     line-height: 0.8;
@@ -253,7 +295,8 @@ article {
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-family: $display;
+    font-size: 1.6rem;
     font-weight: 400;
     color: $fg;
     margin: 3rem 0 1rem;
@@ -446,6 +489,7 @@ article {
   margin: 3rem auto;
   padding: 2rem 2.5rem;
   text-align: center;
+  font-family: $display;
   font-size: 1.3rem;
   line-height: 1.5;
   color: $fg;
@@ -461,7 +505,7 @@ article {
     color: $accent;
     opacity: 0.4;
     margin-bottom: 0.5rem;
-    font-family: $serif;
+    font-family: $display;
   }
 
   cite {
@@ -510,6 +554,57 @@ article {
     height: 36px;
     border-radius: 3px;
     outline: none;
+  }
+}
+
+// ─── Post navigation ────────────────────────────
+
+.post-nav {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid $border;
+}
+
+.post-nav-link {
+  flex: 1;
+  padding: 1rem 1.2rem;
+  background: $bg-raised;
+  border: 1px solid $border;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    border-color: $accent;
+    background: rgba($accent, 0.04);
+  }
+
+  &.post-nav-older {
+    text-align: right;
+  }
+}
+
+.post-nav-label {
+  display: block;
+  font-family: $mono;
+  font-size: 0.65rem;
+  color: $fg-dim;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+.post-nav-title {
+  display: block;
+  font-family: $display;
+  font-size: 0.95rem;
+  color: $fg;
+  transition: color 0.3s ease;
+
+  .post-nav-link:hover & {
+    color: $accent;
   }
 }
 
@@ -601,7 +696,7 @@ article {
     }
 
     .related-title {
-      font-family: $serif;
+      font-family: $display;
       font-size: 0.95rem;
       color: $fg;
       margin-bottom: 0.3rem;
@@ -655,6 +750,8 @@ article {
 
   .site-header {
     padding: 2rem 1.5rem 1.5rem;
+
+    .site-title { font-size: 1.5rem; }
   }
 
   article .post-header h1 {
@@ -671,6 +768,14 @@ article {
     margin-left: 0;
     padding: 1.5rem 1rem;
     font-size: 1.1rem;
+  }
+
+  .post-nav {
+    flex-direction: column;
+  }
+
+  .post-nav-link.post-nav-older {
+    text-align: left;
   }
 
   .related-dreams .related-grid {
