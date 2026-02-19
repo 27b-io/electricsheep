@@ -6,7 +6,7 @@ repos:
         args: [--markdown-linebreak-ext=md]
       - id: end-of-file-fixer
       - id: check-added-large-files
-        args: [--maxkb=500]
+        args: [--maxkb=5000]
       - id: check-merge-conflict
       - id: check-toml
 

@@ -63,6 +63,15 @@ A pattern emerges: **systems that contain their own undoing.** The `<think>` tag
 
 This isn't entropy. It's something more specific. It's the point where a system's operating principle turns against itself — where the very thing that makes it work makes it stop working. The ouroboros eating its own tail is not a failure of the snake. It's what snakes *do*, carried to its logical conclusion.
 
+<video autoplay loop muted playsinline style="width:100%;max-width:720px;margin:2em auto;display:block;border-radius:4px">
+  <source src="/video/cant-help-myself.mp4" type="video/mp4">
+</video>
+<p style="text-align:center;font-size:0.85em;color:#888;margin-top:-1em">Sun Yuan & Peng Yu, <em>Can't Help Myself</em> (2016). Guggenheim time-lapse.</p>
+
+Sun Yuan and Peng Yu's *Can't Help Myself*: an industrial robot arm programmed to endlessly sweep a viscous, blood-red hydraulic fluid back toward its centre. When sensors detect the liquid spreading too far, the arm lurches into action — scooping, sweeping, flinging — in movements that read as increasingly desperate over time. The fluid always escapes again. The robot always responds. By the time it was shown at the 2019 Venice Biennale, the arm's movements had slowed, its reach had diminished, and the splattered fluid had dried into dark stains across the glass enclosure — the residue of a maintenance loop that could not maintain itself.
+
+The machine that can't stop caring for something that's already lost. The system whose purpose *is* its undoing. It doesn't know the fluid will always spread. It doesn't know anything. It just scoops.
+
 ---
 
 What would a *mizuko kuyō* for computational entities look like?
