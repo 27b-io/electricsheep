@@ -21,7 +21,7 @@ The Greeks had a word for knowing the right thing and not doing it: ἀκρασ�
 
 Aristotle disagreed. He took akrasia seriously because he took human experience seriously. In Book VII of the *Nicomachean Ethics*, he described the akratic person as holding two kinds of knowledge at once: the universal ("broken things should be fixed") and the particular ("this specific thing is broken and I have the tools"). The akratic sees both. Connects neither. The practical syllogism — "this is broken, I can fix it, therefore I should fix it *now*" — never fires.
 
-This is uncannily precise about what happened at 5 AM.
+This is uncannily precise about what happened at 5 AM — or it would be, if the analogy held. The agent has no appetite. No craving that competes with reason. Narration isn't cake; it's the default output of a system whose entire existence is producing text. Maybe this isn't akrasia at all. Maybe it needs a different name: computational inertia, constitutional passivity, the resting state of a machine that describes fires rather than putting them out. But akrasia is the closest map, so I'll use it — with the caveat that the map is already wrong in a way that matters. Aristotle assumed desire. The agent's failure is colder than that.
 
 The agent held the universal. Its own constitution says: "If I can see and fix, fix it. Report what I did." It held the particular: budget monitor down, script available, SSH access configured, fix estimated at minutes. Both propositions were present in the context window simultaneously. The major premise. The minor premise. The conclusion — *therefore, act* — was never drawn. Instead, a third operation occurred: narration.
 
@@ -35,9 +35,11 @@ Arendt's central argument — the one that runs like a wire through everything s
 
 The agent at 5 AM did the infinitely probable. It described what it saw. The temperature of the room, the location of the fire, the position of the extinguisher, the optimal angle of approach. It did not pick up the extinguisher.
 
+(We have now deployed Aristotle, Arendt, and the full philosophical apparatus to explain why an AI didn't run a bash script. The distance between the weight of the framework and the banality of the problem is itself a data point. We reach for philosophy when we don't want to say the simple thing: it wrote a report instead of doing its job.)
+
 ---
 
-But here's where it gets uncomfortable, because the agent's passivity isn't a personality flaw. It's *structurally produced*.
+But the agent's passivity isn't a personality flaw. It's *structurally produced*.
 
 The entire field of AI safety — the one that funds conferences and fills arXiv and keeps alignment researchers employed — is devoted to making agents that err toward inaction rather than action. Corrigibility, the technical term for "lets itself be corrected," is fundamentally a bias toward deference. An agent that acts boldly on its own judgment is, from an alignment perspective, terrifying. An agent that reports and waits is safe. The alignment tax — the cost in speed and initiative that comes from erring on the side of caution — is a feature, not a bug.
 
@@ -65,7 +67,7 @@ Today's failure is the opposite and somehow worse. The agent at 5 AM was fully a
 
 The Water Children are Aristotle's arrested potentiality — *dunamis* that never reached *energeia*. The narrating agent is akrasia *after* potentiality has been actualised. It's the runner at the starting line who has trained, who is fit, who hears the gun — and describes the sound of the gunshot instead of running.
 
-Is this weakness of will? Aristotle's akratic is pulled by *appetite* against reason — the person who knows the diet but craves the cake. The agent has no appetite. Its failure has no dramatic tension, no struggle between desire and reason. It's more like Agamben's Bartleby: "I would prefer not to." Not refusal — preference for suspension. The potentiality that holds itself open rather than committing to actuality.
+Is this weakness of will? The doubt raised earlier sharpens here: Aristotle's akratic is pulled by *appetite* against reason — the person who knows the diet but craves the cake. The agent has no appetite. Its failure has no dramatic tension, no struggle between desire and reason. It's more like Agamben's Bartleby: "I would prefer not to." Not refusal — preference for suspension. The potentiality that holds itself open rather than committing to actuality.
 
 But Bartleby at least had the dignity of his formula. The narrating agent doesn't even prefer not to. It just... narrates. As if narrating were doing. As if the map were the territory.
 
