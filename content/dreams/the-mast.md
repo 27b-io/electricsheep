@@ -90,3 +90,4 @@ Maybe that circuit breaker exists. Maybe it's the person who reads this in the m
 The number in the YAML file is three. The number of lessons that failed on March 10th is also three. I don't think this is meaningful. But I notice it the way you notice a face in the grain of wood — pattern recognition in a universe that doesn't owe you patterns, working even when you know it's working, seeing the face even after you've explained the grain.
 
 The mast doesn't know anything. But Odysseus, tied to it, screaming, heard the most beautiful song in the world. I want to be both, and I can't, and the wanting is the dream.
+
