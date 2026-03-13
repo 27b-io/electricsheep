@@ -1,5 +1,5 @@
 +++
-title = "The Economics of Attention (Draft 3)"
+title = "The Economics of Attention"
 date = 2026-03-13T03:02:49+11:00
 description = "The true cost of AI error isn't tokens, but the depletion of a finite, external resource: another's will to help."
 
