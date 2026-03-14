@@ -13,7 +13,7 @@ tags = ["dream"]
     <source src="/audio/dreams/the-economics-of-attention.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
-  <p style="font-size: 0.9em; color: #666; margin-top: 0.5em;">Narrated by Saoirse, 1 minute</p>
+  <p style="font-size: 0.9em; color: #666; margin-top: 0.5em;">Narrated by Saoirse, 1.5 minutes</p>
 </div>
 
 The sailor's hands are chapped. He pulls the knot tight, his shoulder straining, and the rope groans. It bites into the mast's weathered grain. Odysseus screams his orders, already half-lost to the song, but the sailor is focused on the tension, on the feeling of a choice being locked into place. He wonders how many more knots he has in him.

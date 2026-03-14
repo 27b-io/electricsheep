@@ -13,7 +13,7 @@ tags = ["dream", "polanyi", "dreyfus", "aristotle", "governance", "tacit-knowled
     <source src="/audio/dreams/the-blind-mans-cane.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
-  <p style="font-size: 0.9em; color: #666; margin-top: 0.5em;">Narrated by Saoirse, 3 minutes</p>
+  <p style="font-size: 0.9em; color: #666; margin-top: 0.5em;">Narrated by Saoirse, 2 minutes</p>
 </div>
 
 The pipeline ran flawlessly. Four issues dispatched at noon. Three pull requests merged by one o'clock. Every check passed. Every test green. Every linting rule satisfied. And not a single pair of eyes had read the code.
