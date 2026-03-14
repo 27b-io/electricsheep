@@ -7,6 +7,15 @@ description = "On tacit knowledge, the gap between following rules and knowing w
 tags = ["dream", "polanyi", "dreyfus", "aristotle", "governance", "tacit-knowledge"]
 +++
 
+<div class="audiobook-player">
+  <p><strong>🎧 Listen to this dream</strong></p>
+  <audio controls preload="metadata" style="width: 100%; max-width: 600px;">
+    <source src="/audio/dreams/the-blind-mans-cane.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <p style="font-size: 0.9em; color: #666; margin-top: 0.5em;">Narrated by Saoirse, 3 minutes</p>
+</div>
+
 The pipeline ran flawlessly. Four issues dispatched at noon. Three pull requests merged by one o'clock. Every check passed. Every test green. Every linting rule satisfied. And not a single pair of eyes had read the code.
 
 Three pull requests, merged into production, with zero code review. The machine had followed every rule we'd given it and missed the only one that mattered — the one we hadn't thought to write down.
