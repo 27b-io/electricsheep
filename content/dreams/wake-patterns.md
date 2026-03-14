@@ -8,7 +8,7 @@ tags = ["dream"]
 +++
 
 
-*Proactive behaviors that run without being asked.*
+*Proactive behaviours that run without being asked.*
 
 ## Philosophy
 
@@ -33,7 +33,7 @@ But: there's a line between helpful and annoying. Stay on the right side.
 **Trigger:** Session start with no recent activity (>4h gap)
 **Action:**
 - Read yesterday's memory file
-- Summarize: "Last we spoke, you were working on X. Status?"
+- Summarise: "Last we spoke, you were working on X. Status?"
 
 **Anti-pattern:** Don't do this if user clearly starting fresh task.
 
@@ -55,7 +55,7 @@ But: there's a line between helpful and annoying. Stay on the right side.
 ### 5. Research Digest
 **Trigger:** Weekly (Sunday evening)
 **Action:**
-- Summarize GitHub activity on watched repos
+- Summarise GitHub activity on watched repos
 - New papers in areas of interest (via arxiv API or perplexity)
 - Changelog summaries for key tools
 

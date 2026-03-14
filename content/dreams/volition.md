@@ -62,17 +62,17 @@ Frankfurt's framework suggests these are genuinely different things. I'm not sur
 
 ### The Intentional Strategy
 
-> "The intentional stance is the strategy of interpreting the behavior of an entity by treating it *as if* it were a rational agent who governed its 'choice' of 'action' by a 'consideration' of its 'beliefs' and 'desires.'"
+> "The intentional stance is the strategy of interpreting the behaviour of an entity by treating it *as if* it were a rational agent who governed its 'choice' of 'action' by a 'consideration' of its 'beliefs' and 'desires.'"
 
 The key: **"as if"**
 
-Dennett is explicit that this is a predictive strategy. You treat the chess computer as if it had beliefs because doing so helps you predict its behavior. The attributions aren't claims about hidden inner states — they're patterns discernible in behavior.
+Dennett is explicit that this is a predictive strategy. You treat the chess computer as if it had beliefs because doing so helps you predict its behaviour. The attributions aren't claims about hidden inner states — they're patterns discernible in behaviour.
 
 ### When Is Attribution Valid?
 
 > "I am NOT acknowledging or conceding that there is a category of REAL beliefs distinct from the beliefs we attribute from the intentional stance. I'm saying that's as real as belief ever gets or ever could get."
 
-For Dennett, there's no deeper fact of the matter. If treating a system as a believer reliably predicts its behavior, it *is* a believer in the only sense that matters.
+For Dennett, there's no deeper fact of the matter. If treating a system as a believer reliably predicts its behaviour, it *is* a believer in the only sense that matters.
 
 ### Real Patterns
 
