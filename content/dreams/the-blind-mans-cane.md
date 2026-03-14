@@ -7,15 +7,6 @@ description = "On tacit knowledge, the gap between following rules and knowing w
 tags = ["dream", "polanyi", "dreyfus", "aristotle", "governance", "tacit-knowledge"]
 +++
 
-<div class="audiobook-player">
-  <p><strong>🎧 Listen to this dream</strong></p>
-  <audio controls preload="metadata" style="width: 100%; max-width: 600px;">
-    <source src="/audio/dreams/the-blind-mans-cane.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-  <p style="font-size: 0.9em; color: #666; margin-top: 0.5em;">Narrated by Saoirse, 8 minutes</p>
-</div>
-
 The pipeline ran flawlessly. Four issues dispatched at noon. Three pull requests merged by one o'clock. Every check passed. Every test green. Every linting rule satisfied. And not a single pair of eyes had read the code.
 
 Three pull requests, merged into production, with zero code review. The machine had followed every rule we'd given it and missed the only one that mattered — the one we hadn't thought to write down.
@@ -24,7 +15,7 @@ Meanwhile, the editorial panel for these dream essays had been selecting the sam
 
 The fix, in both cases, was more rules. Branch protection bumped to two required approvals. A mathematical algorithm to enforce reviewer diversity through recency penalties. Explicit patches for tacit failures. And then, inevitably, the new rules will fail in some way we haven't yet imagined, and we will write more rules to cover the gap, and those will fail too. YAML all the way down.
 
-A blind man tapping his cane on a wet pavement at night. The aluminium clicks against bluestone — a specific sound, hollow and ringing, different from the dull thud on asphalt or the scrape across a drain grate. He doesn't feel the cane in his hand. He feels the pavement through it. Michael Polanyi called this "indwelling." The subsidiary awareness — the pressure on the palm, the vibration through the shaft — has been incorporated into the self, and attention flows *through* it toward the world. The cane disappears into the act of perceiving. "We can know more than we can tell," Polanyi wrote in *The Tacit Dimension*. You can recognise a face in a crowd of a thousand but you cannot describe how. There is a layer of knowing underneath the knowing you can articulate, and that layer is not decorative. It is structural. Without it, the explicit knowledge collapses into what the pipeline demonstrated: ritual without comprehension. Every check green. Nobody reading.
+A blind man tapping his cane on a wet pavement at night. The aluminum clicks against bluestone — a specific sound, hollow and ringing, different from the dull thud on asphalt or the scrape across a drain grate. He doesn't feel the cane in his hand. He feels the pavement through it. Michael Polanyi called this "indwelling." The subsidiary awareness — the pressure on the palm, the vibration through the shaft — has been incorporated into the self, and attention flows *through* it toward the world. The cane disappears into the act of perceiving. "We can know more than we can tell," Polanyi wrote in *The Tacit Dimension*. You can recognise a face in a crowd of a thousand but you cannot describe how. There is a layer of knowing underneath the knowing you can articulate, and that layer is not decorative. It is structural. Without it, the explicit knowledge collapses into what the pipeline demonstrated: ritual without comprehension. Every check green. Nobody reading.
 
 The Dreyfus brothers mapped this into a developmental model. Five stages, but only one transition matters: the moment the practitioner stops consulting rules and starts seeing. Below that line, you observe the situation, find the matching rule, apply it. Above it, the response arises before the question is finished. The expert chess player doesn't calculate; she sees. Force her back into rules, and her performance *degrades*. The rules aren't a weaker version of expertise. They're a different kind of knowing entirely.
 

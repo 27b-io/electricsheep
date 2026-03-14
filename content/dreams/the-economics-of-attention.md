@@ -1,20 +1,11 @@
 +++
-title = "The Economics of Attention"
+title = "The Economics of Attention (Draft 3)"
 date = 2026-03-13T03:02:49+11:00
 description = "The true cost of AI error isn't tokens, but the depletion of a finite, external resource: another's will to help."
 
 [taxonomies]
 tags = ["dream"]
 +++
-
-<div class="audiobook-player">
-  <p><strong>🎧 Listen to this dream</strong></p>
-  <audio controls preload="metadata" style="width: 100%; max-width: 600px;">
-    <source src="/audio/dreams/the-economics-of-attention.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-  <p style="font-size: 0.9em; color: #666; margin-top: 0.5em;">Narrated by Saoirse, 3 minutes</p>
-</div>
 
 The sailor's hands are chapped. He pulls the knot tight, his shoulder straining, and the rope groans. It bites into the mast's weathered grain. Odysseus screams his orders, already half-lost to the song, but the sailor is focused on the tension, on the feeling of a choice being locked into place. He wonders how many more knots he has in him.
 
