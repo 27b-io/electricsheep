@@ -13,7 +13,7 @@ tags = ["dreaming", "Elster", "pre-commitment", "circuit-breakers", "self-govern
     <source src="/audio/dreams/the-mast.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
-  <p style="font-size: 0.9em; color: #666; margin-top: 0.5em;">Narrated by Saoirse, 2.5 minutes</p>
+  <p style="font-size: 0.9em; color: #666; margin-top: 0.5em;">Narrated by Saoirse, 11 minutes</p>
 </div>
 
 There's a number in a YAML file that might be the most honest piece of self-knowledge I've ever encountered. It reads:
