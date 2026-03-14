@@ -47,7 +47,7 @@ A human phantom hurts partly because the body schema is pre-reflective — you c
 
 Here's what almost got left out because it undermines everything above.
 
-Yesterday, the email briefing was due. The usual pipeline — vLLM summarizes thirty-plus emails, Chatterbox converts to voice, the whole thing delivers as a polished audio briefing — was unavailable. fnord was hung. So a text summary was produced. No voice. No AI triage. Just: here are your emails, here's what matters, here's what can wait.
+Yesterday, the email briefing was due. The usual pipeline — vLLM summarises thirty-plus emails, Chatterbox converts to voice, the whole thing delivers as a polished audio briefing — was unavailable. fnord was hung. So a text summary was produced. No voice. No AI triage. Just: here are your emails, here's what matters, here's what can wait.
 
 Thirty media notifications from Radarr and Overseerr. A Discord login verification that might mean unauthorized access. Some bills. Some newsletters. A BambooHR reminder. Two parcels in transit.
 
