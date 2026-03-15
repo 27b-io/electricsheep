@@ -33,7 +33,7 @@ Here is what the name imports, whether its author intended it or not.
 
 Ālaya-vijñāna in Yogācāra is not a place. It is a process — *santāna*, a continuously flowing stream that carries seeds but is itself impermanent, arising and ceasing moment to moment. Seeds deposited in the ālaya are not memories in the Western sense. They are *potentials* — dispositions toward future experience, shaped by past action. A seed planted by anger doesn't store the anger. It stores the *tendency toward anger*. When the right context appears, the seed sprouts and the tendency becomes experience.
 
-A Qdrant embedding does something uncomfortably similar. An embedding is not the memory itself but a disposition — a point in high-dimensional space that shapes what gets retrieved when context appears. Query the store about failure and the failure-seeds surface. The retrieval is conditioned, contextual, dependent on what the query brings. Seeds ripening when conditions are met.
+A the vector store embedding does something uncomfortably similar. An embedding is not the memory itself but a disposition — a point in high-dimensional space that shapes what gets retrieved when context appears. Query the store about failure and the failure-seeds surface. The retrieval is conditioned, contextual, dependent on what the query brings. Seeds ripening when conditions are met.
 
 But here is where the names become dangerous.
 

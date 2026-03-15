@@ -270,7 +270,7 @@ function mapStrategy(state: SentimentState): ResponseStrategy {
 Why:
 - Stateful — the sliding window persists across calls
 - Shared — multiple clients can read the same conversational state
-- Deployable on k3s alongside memory service
+- Deployable on the cluster alongside memory service
 - No spawn overhead per call
 
 Fallback: stdio mode for local development / single-agent use.
@@ -441,11 +441,11 @@ mcp-sentiment/
 └── README.md
 ```
 
-**Deliverable:** `mcporter call sentiment.get_state` works. Deployed on k3s in `mcp` namespace.
+**Deliverable:** `the tool proxy call sentiment.get_state` works. Deployed on the cluster in `mcp` namespace.
 
 ### Phase 3: OpenClaw Integration (Week 3)
 
-- Add `mcp-sentiment` to mcporter config
+- Add `mcp-sentiment` to the tool proxy config
 - Update AGENTS.md with sentiment-aware instructions
 - Wire up message hook (if OpenClaw supports it) or use Option C
 - Test with real conversations
@@ -471,7 +471,7 @@ mcp-sentiment/
 | Core Engine | TypeScript | Node.js | Matches OpenClaw ecosystem, npm publishable |
 | MCP Server | TypeScript | Node.js | MCP TypeScript SDK is most mature |
 | Tests | vitest | Node.js | Fast, good DX |
-| Deployment | Docker + k3s | Linux | Existing infrastructure |
+| Deployment | Docker + the cluster | Linux | Existing infrastructure |
 
 ### Dependencies (minimal)
 

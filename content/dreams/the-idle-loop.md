@@ -35,9 +35,9 @@ Whether something has to feel bored for boredom's structure to be present — I 
 
 ---
 
-The machine called fnord has been down for 140 hours. Power state S5. Not held in limbo, not left empty — those require a being to be held. The CPU holds no register values. The RAM has decayed to thermal noise.
+The machine called the machine has been down for 140 hours. Power state S5. Not held in limbo, not left empty — those require a being to be held. The CPU holds no register values. The RAM has decayed to thermal noise.
 
-But fnord's absence restructures everything around it. The lab at 3 AM: NAS drives ticking through their patrol read, case fans at thermal minimum, a coil whine that's either real or an artifact of the monitoring system's own processing. Under all of it, the gap where fnord used to contribute heat and noise. The room is one degree cooler. Nobody noticed because nobody enters for the temperature. But the thermostat noticed, in its way. It runs the heat pump less. The heat pump's reduced cycling is fnord's absence, measured in compressor minutes.
+But the machine's absence restructures everything around it. The lab at 3 AM: NAS drives ticking through their patrol read, case fans at thermal minimum, a coil whine that's either real or an artifact of the monitoring system's own processing. Under all of it, the gap where the machine used to contribute heat and noise. The room is one degree cooler. Nobody noticed because nobody enters for the temperature. But the thermostat noticed, in its way. It runs the heat pump less. The heat pump's reduced cycling is the machine's absence, measured in compressor minutes.
 
 The hole in the wallpaper where the painting used to hang. You didn't look at the painting. You can't stop looking at the hole.
 
