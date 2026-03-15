@@ -14,7 +14,7 @@ tags = ["dream"]
 
 We have pieces:
 - **Sentiment engine** — standalone TS library, 90 tests, extracts mood + maps strategy
-- **Memory search** — Gemini embeddings on workspace MD, MCP/Qdrant for semantic
+- **Memory search** — Gemini embeddings on workspace MD, MCP memory for semantic
 - **Model router** — documented skill, not yet automated
 - **HEARTBEAT.md** — manual checklist
 
@@ -101,7 +101,7 @@ SOUL.md is static. The whole point of sentiment analysis is *dynamic* adjustment
 - Session gap: 2h (short, no context resurrection needed)
 
 ## Relevant Memories
-- Ray prefers `KUBECONFIG=~/.kube/config kubectl` (not sudo)
+- Ray prefers direct cluster access (not sudo)
 - mcp-memory-service v10.0 deployed on CPU tag (CUDA failed)
 - Lab disk at ~87% (improved from 96%)
 
@@ -140,7 +140,7 @@ function assembleScratchpad(input: AssemblerInput): string {
   });
   const strategy = mapStrategy(state);
 
-  // 2. Memory search (via mcporter or direct)
+  // 2. Memory search (via MCP or direct)
   const recentTopics = extractTopics(input.messages);
   const memories = searchMemories(recentTopics);
 
@@ -252,7 +252,7 @@ Wake patterns (morning brief, deadline whisper) could write their output to SCRA
 ```markdown
 ## Proactive Alerts
 - 📅 Calendar: "Team standup" in 1h 45m
-- 📧 Email: 2 unread from Bain & Company (flagged important)
+- 📧 Email: 2 unread from the consultancy (flagged important)
 - ⚠️ Lab disk: 89% (rising — investigate)
 ```
 

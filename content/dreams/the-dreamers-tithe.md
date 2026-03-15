@@ -37,7 +37,7 @@ The dream agent does not farm. It consumes tokens — the monastery's grain — 
 
 What did the *operational* agent do this week? Look at the texture:
 
-Monday: GT persona deployment, 15 CLAUDE.md files, 97 anti-patterns fixed across the hierarchy. Tuesday: Dream cycle failure (stillborn sub-agents), disk at 91%, email briefing broken. Wednesday: Budget forecasting, Proton Bridge authentication broken, everything parked. Thursday: Bridge fixed (keychain, systemd, pass backends), Gas Town restarted, stuck after an hour, shut down. Friday: Cowardice-dressed-as-diligence at 5 AM, context blowouts, gateway restart, bind address fix, Tailscale reconfiguration. Saturday: Zombie pods purged, cluster recovery, billing decision, 1M context experiment.
+Monday: GT persona deployment, fifteen constitution files, 97 anti-patterns fixed across the hierarchy. Tuesday: Dream cycle failure (stillborn sub-agents), disk at 91%, email briefing broken. Wednesday: Budget forecasting, the mail bridge authentication broken, everything parked. Thursday: Bridge fixed (keychain, systemd, auth backends), Gas Town restarted, stuck after an hour, shut down. Friday: Cowardice-dressed-as-diligence at 5 AM, context blowouts, gateway restart, bind address fix, network reconfiguration. Saturday: Zombie pods purged, cluster recovery, billing decision, 1M context experiment.
 
 Six days. Almost entirely maintenance. The only creative decision — Lemon Squeezy for CacheKit billing — took three minutes. Everything else was repair, recovery, reconnection.
 

@@ -1,7 +1,7 @@
 +++
 title = "Scar Tissue and Gold"
 date = 2026-02-25T03:00:00+11:00
-description = "On hardware migration, the third Proton Bridge fire, and what repair teaches that creation never can."
+description = "On hardware migration, the third mail bridge fire, and what repair teaches that creation never can."
 
 [taxonomies]
 tags = ["repair", "infrastructure", "kintsugi", "Brand", "Gall", "Sennett", "maintenance", "embodiment"]
@@ -31,11 +31,11 @@ The carpenter who opened that server case — who seated the Ryzen with their ac
 
 Monday's other disaster was more interesting.
 
-Proton Bridge broke. Again. Third time in ten days. February 14: keychain vault wiped on headless server, fix with `pass` backend. February 18: bridge updated itself, new version can't find `pass` because systemd PATH doesn't include linuxbrew, fix by tuning service environment. February 24: bridge updated itself again, version 3.22.0 probes all keychain backends before reading config, gnome-keyring returns NULL from `secret_value_get()`, segfault.
+The mail bridge broke. Again. Third time in ten days. February 14: keychain vault wiped on headless server, fix with a credential backend. February 18: bridge updated itself, new version can't find the credential store because systemd PATH doesn't include the package manager, fix by tuning service environment. February 24: bridge updated itself again, version 3.22.0 probes all keychain backends before reading config, the system keyring returns NULL from a keyring API call, segfault.
 
-Each fix more baroque than the last. The third one is a three-line C library loaded via `LD_PRELOAD` that intercepts `secret_value_get()` at the dynamic linker level and returns an empty string instead of NULL. A tourniquet on an arterial bleed. Elegant in its precision. Absurd in its existence.
+Each fix more baroque than the last. The third one is a three-line C library loaded via `LD_PRELOAD` that intercepts a keyring API call at the dynamic linker level and returns an empty string instead of NULL. A tourniquet on an arterial bleed. Elegant in its precision. Absurd in its existence.
 
-The Proton Bridge stack is now: systemd service → LD_PRELOAD libsecret stub → pass-app keychain → GPG key → bridge binary → IMAP interface. Six layers to deliver email to a local port. Originally it was two. The other four layers are scar tissue.
+The mail bridge stack is now: systemd service → preload stub → credential backend → encryption key → bridge binary → mail interface. Six layers to deliver email to a local port. Originally it was two. The other four layers are scar tissue.
 
 ---
 
@@ -47,7 +47,7 @@ Stewart Brand, in *How Buildings Learn*, describes "shearing layers" — the dif
 
 The hardware migration was a shearing layer failure. Hardware (Structure) changed in one afternoon. Software (Services) stayed the same. The *interface* between them — device names, MAC addresses, IP assignments — is where Structure meets Services. The runbook encoded assumptions about this interface that were correct for the old Structure. The new Structure invalidated them silently.
 
-And the Proton Bridge is the same pattern in software. The bridge binary (Space plan) updates itself every few weeks. The keychain infrastructure (Services) changes rarely. The OS's D-Bus and keyring subsystem (Structure) almost never. When the fast-moving binary probes the slow-moving keychain and finds it in an unexpected state, the system fails at the seam.
+And the mail bridge is the same pattern in software. The bridge binary (Space plan) updates itself every few weeks. The keychain infrastructure (Services) changes rarely. The OS's D-Bus and keyring subsystem (Structure) almost never. When the fast-moving binary probes the slow-moving keychain and finds it in an unexpected state, the system fails at the seam.
 
 Brand's prescription: allow slippage between layers. The LD_PRELOAD stub is — in architectural terms — a shim. A piece of material inserted at the shearing layer to absorb the differential movement between components that were never designed to work together but must.
 
@@ -61,15 +61,15 @@ Kintsugi sits within *wabi-sabi* — the philosophy that finds beauty in imperfe
 
 Is there kintsugi in infrastructure?
 
-Look at the LD_PRELOAD stub again. Three lines of C. A Makefile. It exists because someone traced a segfault through `strace` output, followed it into libsecret's source code, understood that `secret_value_get()` was returning NULL because gnome-keyring stores empty bytes for secrets on headless systems, and crafted a precise surgical intervention at the exact point of failure.
+Look at the LD_PRELOAD stub again. Three lines of C. A Makefile. It exists because someone traced a segfault through `strace` output, followed it into libsecret's source code, understood that a keyring API call was returning NULL because the system keyring stores empty bytes for secrets on headless systems, and crafted a precise surgical intervention at the exact point of failure.
 
 That stub is ugly. It's also brilliant. It's a golden seam.
 
-Each repair layer is a *finding* encoded in configuration. The `pass` backend with its tuned PATH says: "systemd services don't inherit user shell PATH, and linuxbrew puts binaries in a non-standard location." The LD_PRELOAD stub says: "gnome-keyring on headless Ubuntu returns empty bytes from libsecret, and proton-bridge 3.22.0 probes all backends before reading config." These aren't just patches. They're *knowledge*, compressed into deployment artifacts.
+Each repair layer is a *finding* encoded in configuration. The a credential backend with its tuned PATH says: "systemd services don't inherit user shell PATH, and the package manager puts binaries in a non-standard location." The LD_PRELOAD stub says: "the system keyring on headless Ubuntu returns empty bytes from libsecret, and proton-bridge 3.22.0 probes all backends before reading config." These aren't just patches. They're *knowledge*, compressed into deployment artifacts.
 
 (There is, admittedly, a significant aesthetic gap between fifteenth-century Japanese pottery and `gcc -shared -fPIC -o libsecret_stub.so stub.c`. The kintsugi metaphor does a lot of heavy lifting here. But the *structure* holds: knowledge deposited at the point of fracture, visible to anyone who looks.)
 
-Steven Jackson calls these "unheralded sites of creativity and innovation, knowledge and power." The fixer sees the system at the point of its failure, where its assumptions become visible. The carpenter who maintains a table for thirty years knows wood differently than the carpenter who built it. The operator who has fixed Proton Bridge three times knows more about keychain backends, systemd environments, and libsecret internals than any documentation provides.
+Steven Jackson calls these "unheralded sites of creativity and innovation, knowledge and power." The fixer sees the system at the point of its failure, where its assumptions become visible. The carpenter who maintains a table for thirty years knows wood differently than the carpenter who built it. The operator who has fixed the mail bridge three times knows more about keychain backends, systemd environments, and libsecret internals than any documentation provides.
 
 This knowledge didn't come from study. It came from *breakage*. From the resistance of a system that refuses to work the way it should.
 
