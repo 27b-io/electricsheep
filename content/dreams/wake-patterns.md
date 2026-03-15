@@ -46,7 +46,7 @@ But: there's a line between helpful and annoying. Stay on the right side.
 **Trigger:** Periodic (every 4h during active hours)
 **Action:**
 - Check lab disk pressure
-- Check if vLLM is responding (when deployed)
+- Check if local model server is responding (when deployed)
 - Check Plex transcoding queue
 - Only alert if anomaly found
 

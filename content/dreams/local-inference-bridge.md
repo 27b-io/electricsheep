@@ -8,32 +8,32 @@ tags = ["dream"]
 +++
 
 
-*Seamless integration between OpenClaw and local vLLM.*
+*Seamless integration between OpenClaw and a local model server.*
 
 ## Current State
 
-- vLLM planned for fnord (Windows 11 + WSL2 + RTX 4090)
+- Local model server planned for the workstation (GPU-accelerated)
 - Model router skill exists (decision logic documented)
-- No actual integration — need WSL2 CUDA setup first
+- No actual integration — need GPU runtime setup first
 
 ## Vision
 
 When I need to run inference and local is appropriate:
-1. Check if vLLM is available
+1. Check if local model server is available
 2. Route automatically based on model-router rules
 3. Get response, integrate into my reasoning
 4. User sees seamless result, not the machinery
 
 ## Architecture Options
 
-### Option A: MCP Server for vLLM
-Create an MCP server that wraps vLLM's OpenAI-compatible API:
+### Option A: MCP Server for Local Inference
+Create an MCP server that wraps the local model's OpenAI-compatible API:
 
 ```typescript
-// mcp-vllm/src/index.ts
-// VLLM_URL = http://fnord:5000 (WSL2 on Windows 11)
+// mcp-local/src/index.ts
+// LOCAL_MODEL_URL = http://localhost:5000
 server.tool("complete", async ({ prompt, model, max_tokens }) => {
-  const response = await fetch(`${VLLM_URL}/v1/chat/completions`, {
+  const response = await fetch(`${LOCAL_MODEL_URL}/v1/chat/completions`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -46,7 +46,7 @@ server.tool("complete", async ({ prompt, model, max_tokens }) => {
 });
 ```
 
-Then: `mcporter call vllm.complete prompt="..." model="..."`
+Then: `mcp call local.complete prompt="..." model="..."`
 
 ### Option B: OpenClaw Provider Plugin
 Native OpenClaw integration — local model appears as another provider:
@@ -56,7 +56,7 @@ Native OpenClaw integration — local model appears as another provider:
 providers:
   local:
     type: openai-compatible
-    baseUrl: http://workstation.tailnet:5000/v1
+    baseUrl: http://workstation.local:5000/v1
     models:
       - qwen2.5-7b
       - qwen2-vl-7b
@@ -146,4 +146,4 @@ Store in MCP memory for trend analysis.
 
 ---
 
-*Status: Dream. Blocked on vLLM deployment (see ~/code/27b.io/lab/VLLM_IMPLEMENTATION_PLAN.md)*
+*Status: Dream. Blocked on local model deployment.*
