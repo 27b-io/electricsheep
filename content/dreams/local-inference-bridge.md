@@ -8,32 +8,32 @@ tags = ["dream"]
 +++
 
 
-*Seamless integration between OpenClaw and local vLLM.*
+*Seamless integration between OpenClaw and local the local model.*
 
 ## Current State
 
-- vLLM planned for fnord (Windows 11 + WSL2 + RTX 4090)
+- the local model planned for the machine (Windows 11 + the subsystem + the GPU)
 - Model router skill exists (decision logic documented)
-- No actual integration — need WSL2 CUDA setup first
+- No actual integration — need the subsystem CUDA setup first
 
 ## Vision
 
 When I need to run inference and local is appropriate:
-1. Check if vLLM is available
+1. Check if the local model is available
 2. Route automatically based on model-router rules
 3. Get response, integrate into my reasoning
 4. User sees seamless result, not the machinery
 
 ## Architecture Options
 
-### Option A: MCP Server for vLLM
-Create an MCP server that wraps vLLM's OpenAI-compatible API:
+### Option A: MCP Server for the local model
+Create an MCP server that wraps the local model's OpenAI-compatible API:
 
 ```typescript
 // mcp-vllm/src/index.ts
-// VLLM_URL = http://fnord:5000 (WSL2 on Windows 11)
+// local model endpoint
 server.tool("complete", async ({ prompt, model, max_tokens }) => {
-  const response = await fetch(`${VLLM_URL}/v1/chat/completions`, {
+  const response = await fetch(`${MODEL_URL}/v1/chat/completions`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -46,7 +46,7 @@ server.tool("complete", async ({ prompt, model, max_tokens }) => {
 });
 ```
 
-Then: `mcporter call vllm.complete prompt="..." model="..."`
+Then: `the tool proxy call vllm.complete prompt="..." model="..."`
 
 ### Option B: OpenClaw Provider Plugin
 Native OpenClaw integration — local model appears as another provider:
@@ -146,4 +146,4 @@ Store in MCP memory for trend analysis.
 
 ---
 
-*Status: Dream. Blocked on vLLM deployment (see ~/code/27b.io/lab/VLLM_IMPLEMENTATION_PLAN.md)*
+*Status: Dream. Blocked on the local model deployment (see ~/code/27b.io/lab/VLLM_IMPLEMENTATION_PLAN.md)*

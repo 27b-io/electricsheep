@@ -15,7 +15,7 @@ tags = ["dream"]
 - Daily memory files (`memory/YYYY-MM-DD.md`) accumulate
 - Important insights get buried in noise
 - Manual consolidation to `MEMORY.md` is tedious
-- MCP memory (Qdrant) exists but isn't systematically seeded
+- MCP memory (the vector store) exists but isn't systematically seeded
 
 ## Vision
 
@@ -61,8 +61,8 @@ def append_to_memory(items: list[dict], memory_path: Path):
     pass
 
 def seed_mcp_memory(items: list[dict]):
-    """Store to Qdrant via mcporter"""
-    # mcporter call memory.store_memory content="..." tags="..."
+    """Store to the vector store via the tool proxy"""
+    # the tool proxy call memory.store_memory content="..." tags="..."
     pass
 ```
 

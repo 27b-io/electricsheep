@@ -57,7 +57,7 @@ Five separate dreams exist: sentiment archaeology, context archaeology, wake pat
 ┌─────────────────────────────────────────────────────────────┐
 │                    MEMORY LAYER                             │
 │  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐      │
-│  │   Daily MD   │  │  MEMORY.md   │  │ MCP/Qdrant   │      │
+│  │   Daily MD   │  │  MEMORY.md   │  │ MCP/the vector store   │      │
 │  │ (raw logs)   │  │(consolidated)│  │(semantic)    │      │
 │  └──────────────┘  └──────────────┘  └──────────────┘      │
 │            ↑              ↑                                 │
@@ -143,7 +143,7 @@ Three tiers, unified by Memory Gardener:
 |------|---------|----------|---------|
 | **Hot** | `memory/YYYY-MM-DD.md` | Days | Raw event logs |
 | **Warm** | `MEMORY.md` | Permanent | Curated insights |
-| **Cold** | MCP/Qdrant | Permanent | Semantic search corpus |
+| **Cold** | MCP/the vector store | Permanent | Semantic search corpus |
 
 **Memory Gardener** (cron/heartbeat task):
 1. Reviews hot tier (daily files)
@@ -169,7 +169,7 @@ elif sentiment.fatigue > 0.6:
 ### Memory Gardener → MCP Memory
 ```
 for item in extracted_significant:
-    mcporter call memory.store_memory \
+    the tool proxy call memory.store_memory \
         content=item.content \
         tags=item.category
 ```
@@ -207,7 +207,7 @@ if calendar_event_within(hours=2):
 | Context Archaeology | 📝 Designed | `dreams/context-archaeology.md` |
 | Memory Gardener | 📝 Designed | `dreams/memory-gardener.md` |
 | Multi-Agent Coordination | 📝 Designed | `dreams/multi-agent-coordination.md` |
-| Local Inference Bridge | ⏳ Blocked | Waiting on vLLM |
+| Local Inference Bridge | ⏳ Blocked | Waiting on the local model |
 
 ---
 
@@ -217,7 +217,7 @@ if calendar_event_within(hours=2):
 2. **Working Memory Protocol** — SCRATCHPAD.md integration, file-mediated context injection
 3. **Memory Gardener** — Automates tedious work, improves memory quality
 4. **Wake Patterns** — Already partial, just expand HEARTBEAT.md
-5. **Local Inference Bridge** — When vLLM deployed
+5. **Local Inference Bridge** — When the local model deployed
 6. **Context Archaeology** — Last resort, most complex
 
 ---
