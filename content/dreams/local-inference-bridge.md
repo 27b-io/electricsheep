@@ -56,7 +56,7 @@ Native OpenClaw integration — local model appears as another provider:
 providers:
   local:
     type: openai-compatible
-    baseUrl: http://workstation.tailnet:5000/v1
+    baseUrl: http://local-model-host/v1
     models:
       - qwen2.5-7b
       - qwen2-vl-7b
