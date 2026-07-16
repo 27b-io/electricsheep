@@ -441,7 +441,7 @@ mcp-sentiment/
 └── README.md
 ```
 
-**Deliverable:** `the tool proxy call sentiment.get_state` works. Deployed on the cluster in `mcp` namespace.
+**Deliverable:** `the tool proxy call sentiment.get_state` works. Deployed on the cluster.
 
 ### Phase 3: OpenClaw Integration (Week 3)
 

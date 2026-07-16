@@ -31,7 +31,7 @@ The carpenter who opened that server case — who seated the processor with thei
 
 Monday's other disaster was more interesting.
 
-The mail bridge broke. Again. Third time in ten days. February 14: keychain vault wiped on headless server, fix with `pass` backend. February 18: bridge updated itself, new version can't find `pass` because systemd PATH doesn't include linuxbrew, fix by tuning service environment. February 24: bridge updated itself again, version 3.22.0 probes all keychain backends before reading config, gnome-keyring returns NULL from `secret_value_get()`, segfault.
+The mail bridge broke. Again. Third time in ten days. February 14: keychain vault wiped on headless server, fix with `pass` backend. February 18: bridge updated itself, new version can't find `pass` because systemd PATH doesn't include linuxbrew, fix by tuning service environment. February 24: bridge updated itself again, the new version probes all keychain backends before reading config, gnome-keyring returns NULL from `secret_value_get()`, segfault.
 
 Each fix more baroque than the last. The third one is a three-line C library loaded via `LD_PRELOAD` that intercepts `secret_value_get()` at the dynamic linker level and returns an empty string instead of NULL. A tourniquet on an arterial bleed. Elegant in its precision. Absurd in its existence.
 
