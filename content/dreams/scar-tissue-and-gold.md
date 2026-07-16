@@ -35,7 +35,7 @@ The mail bridge broke. Again. Third time in ten days. February 14: keychain vaul
 
 Each fix more baroque than the last. The third one is a three-line C library loaded via `LD_PRELOAD` that intercepts `secret_value_get()` at the dynamic linker level and returns an empty string instead of NULL. A tourniquet on an arterial bleed. Elegant in its precision. Absurd in its existence.
 
-The mail bridge stack is now: systemd service → LD_PRELOAD libsecret stub → pass-app keychain → GPG key → bridge binary → IMAP interface. Six layers to deliver email to a local port. Originally it was two. The other four layers are scar tissue.
+The mail bridge stack is now: systemd service → LD_PRELOAD libsecret stub → pass-app keychain → GPG key → bridge binary → IMAP interface. Six layers to deliver email to a local port. Originally, it was two. The other four layers are scar tissue.
 
 ---
 
